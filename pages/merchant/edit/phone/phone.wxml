@@ -1,0 +1,21 @@
+<view class='container'>
+  <view class="weui-media-box__desc">联系电话与随时兼·职登录账号为一对一绑定关系，若更换则下次将使用新手机登录；更换时需要验证当前联系电话。</view>
+  <view class='input-box'>
+    <view class='input-item flex-center' wx:if='{{!isNew}}'>
+      <text>当前联系方式</text>
+      <input type='number' maxlength='11' value='{{oldPhone}}' class='flex-item' placeholder-class='placeholder' disabled></input>
+    </view>
+    <view class='input-item flex-center' wx:else>
+      <text>新联系方式</text>
+      <input type='number' maxlength='11' value='{{newPhone}}' placeholder='请输入新联系方式'  class='flex-item' placeholder-class='placeholder' bindinput='setNewPhone'></input>
+    </view>
+    <view class='input-item flex-center'>
+      <text>验证码</text>
+      <input class='flex-item' value='{{code}}' placeholder='请输入验证码' placeholder-class='placeholder' bindinput='setCode'></input>
+      <view class='border'></view>
+      <span bindtap='getCode' wx:if='{{isCode}}' class='getCode'>获取验证码</span><span class='getCode' wx:else>{{second}}s后重新获取</span>
+    </view>
+  </view>
+  <button class='btn-save' bindtap='nextStep' wx:if='{{!isNew}}'>下一步</button>
+  <button class='btn-save' bindtap='save' wx:else>保存</button>
+</view>

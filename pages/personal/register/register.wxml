@@ -1,0 +1,26 @@
+<view class="container">
+  <view class='logo'>
+    <image src='/image/logo.png' />
+  </view>
+  <view class='phone_box'>
+   <view class='phone-item flex-center'>
+    <image src='/image/phone2.png' class='phone-img'></image>
+    <input type='number' maxlength='11' class='flex-item' placeholder-class='placeholder-style' placeholder='输入有效手机号' bindinput='setPhone' />
+   </view>
+   <view class='phone-item flex-center'>
+    <image src='/image/veri_code.png' class='code-img'></image>
+    <input class='flex-item' placeholder-class='placeholder-style' bind:blur="setCode" placeholder='输入6位验证码' />
+    <span bindtap='getCode' wx:if='{{isCode}}'>获取验证码</span><span wx:else>{{second}}s后重新获取</span>
+   </view>
+   <view class='clause flex-center'>
+    <icon type='success_circle' color='#0695FF' size='18' wx:if='{{isAgrred}}' bindtap='agrredClause'></icon><icon type='circle' size='18'  bindtap='agrredClause' wx:else></icon>
+    <view class='clause-tip'>我已阅读阅读并同意<text>服务条款</text></view>
+   </view>
+   <view class='referral-code flex-center'>
+    <view>推荐码</view>
+    <input bindinput='setInviterCode'></input>
+    <text>（选填）</text>
+   </view>
+   <view class='btn' catchtap='complete'>注册</view>
+  </view>
+</view>

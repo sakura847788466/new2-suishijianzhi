@@ -1,0 +1,108 @@
+{
+  "pages": [
+    "pages/user/userSelect/userSelect",
+    "pages/user/fillInInformation/fillInInformation",
+    "pages/merchant/index/index",
+    "pages/merchant/nav/enterMerchant/enterMerchant",
+    "pages/merchant/nav/newStaff/newStaff",
+    "components/stars/stars",
+    "pages/personal/index/index",
+    "pages/personal/mine/mine",
+    "pages/personal/mine/mineResume/mineResume",
+    "pages/personal/mine/mineResumeEdit/mineResumeEdit",
+    "pages/merchant/system/register/register",
+    "pages/merchant/money/freezeCash/freezeCash",
+    "pages/merchant/money/recharge/recharge",
+    "pages/merchant/money/index/index",
+    "pages/merchant/merCenter/problem/problem",
+    "pages/user/authorize/authorize",
+    "pages/personal/register/register",
+    "pages/merchant/system/login/login",
+    "pages/merchant/system/password/password",
+    "pages/merchant/merCenter/index/index",
+    "pages/user/message/success/success",
+    "components/notice/notice",
+    "pages/merchant/money/withdraw/withdraw",
+    "pages/merchant/edit/description/description",
+    "pages/merchant/recruit/index/index",
+    "pages/merchant/detail/merchantDetail/merchantDetail",
+    "pages/user/location/location",
+    "pages/merchant/setWhere/setWhere",
+    "pages/merchant/shopIntro/shopIntro",
+    "pages/merchant/phoneNum/phoneNum",
+    "pages/merchant/shopsetHead/sopsetHead",
+    "pages/merchant/edit/phone/phone",
+    "pages/merchant/setInfoo/setInfoo",
+    "pages/merchant/zhiweimiaoshu/zhiweimiaoshu",
+    "pages/user/search/search",
+    "pages/user/job/all/all",
+    "pages/merchant/detail/jobDetail/jobDetail",
+    "pages/user/job/one/one",
+    "pages/user/msgList/msgList",
+    "pages/personal/grab/grab",
+    "pages/merchant/post/post",
+    "pages/merchant/depostsit/depostsit",
+    "pages/merchant/depostsitTwo/depostsitTwo",
+    "pages/merchant/recruit/payDeposit/payDeposit",
+    "pages/merchant/chooseWorker/chooseWorker",
+    "pages/merchant/daka/daka",
+    "pages/merchant/recruit/checkWorker/checkWorker",
+    "pages/user/richText/richText",
+    "components/banner/banner",
+    "pages/merchant/moomAdd/moomAddr",
+    "pages/merchant/tuijian/tuijian",
+    "pages/myCollection/myCollection",
+    "pages/merchant/portJob/portJob",
+    "pages/personal/mine/mineResumeEdit/certificationAdd/certificationAdd",
+    "pages/personal/mine/mineResumeEdit/certificationDelete/certificationDelete",
+    "pages/personal/mine/mineResumeEdit/changeLocation/changeLocation",
+    "pages/personal/mine/mineCollection/mineCollection",
+    "pages/personal/mine/mineRecomand/mineRecomand",
+    "components/my-map/my-map",
+    "components/header-search/header-search",
+    "pages/merchant/postWorker/postWorker",
+    "pages/personal/mine/minePurse/minePurse",
+    "pages/merchant/system/registerInfo/registerInfo",
+    "pages/merchant/recruit/post/post",
+    "pages/merchant/edit/index/index",
+    "pages/merchant/edit/bgImg/bgImg"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0C71EF",
+    "navigationBarTitleText": "随时兼职",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#0C71EF",
+    "backgroundColor": "#fdfdfd",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/personal/index/index",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_select.png"
+      },
+      {
+        "text": "抢单",
+        "pagePath": "pages/personal/grab/grab",
+        "iconPath": "image/grabSheet.png",
+        "selectedIconPath": "image/grabSheet_select.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/personal/mine/mine",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine_select.png"
+      }
+    ]
+  }
+}

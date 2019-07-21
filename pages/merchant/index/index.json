@@ -1,0 +1,10 @@
+{
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "white",
+  "usingComponents": {
+    "notice": "/components/notice/notice",
+    "my-bar":"/components/my_bar/my_bar",
+    "banner":"/components/banner/banner",
+    "header-search": "/components/header-search/header-search"
+  }
+}

@@ -1,0 +1,41 @@
+page{
+  background:#fff;
+}
+.personal, .company, .work, .recruit {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  display: block;
+}
+
+.page1 text{
+  margin-top: 10px;
+  font-size: 34rpx;
+}
+
+.page1 .company,.page2 .recruit {
+  justify-content: baseline;
+}
+
+.page2 image {
+  width: 380rpx;
+  height: 320rpx;
+  display: block;
+}
+.page2 text {
+  width:200rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #0C71EF;
+  padding: 18rpx;
+  margin-top: 20rpx;
+  border-radius: 40rpx;
+  border: 2rpx solid #0C71EF;
+}

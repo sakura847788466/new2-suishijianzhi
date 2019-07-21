@@ -1,0 +1,8 @@
+<view class="container">
+  <view class='logo'>
+    <image src='/image/logo.png' />
+  </view>
+  <button class='wxLogin' open-type='getUserInfo' bindgetuserinfo="bindGetUserInfo">
+    <image src='/image/wx.png' /> 使用微信授权登录
+  </button>
+  </view>

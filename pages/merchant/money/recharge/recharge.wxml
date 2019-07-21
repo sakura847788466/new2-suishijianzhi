@@ -1,0 +1,17 @@
+<view class="container">
+  <view class='bg-common'>
+      <view class='chongzhi'>
+          <text class='tietle'>充值金额</text>
+          <input class='shuru' placeholder-class='placeholder-style' placeholder='请输入充值金额'  bindinput='moneyInput'></input>
+          <text class='xiushi'>元</text>
+      </view>
+      <text class='tishi'>账户可用余额：{{moneyInfo}}元</text>
+      <view class='zhifu'>
+          <image src='/image/weixin.png' class='weixin'></image>
+          <text class='one'>微信</text>
+          <text class='two'>亿万用户的选择，更快更安全</text>
+          <icon class='xuanxiang' type="success" color='#FF5A00'></icon>
+      </view>
+      <button class='btnn ' bindtap='zhifu'>充值</button>
+  </view>
+</view>

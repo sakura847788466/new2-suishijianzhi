@@ -1,0 +1,73 @@
+.container{
+  padding:20rpx 0;
+}
+.con{
+  padding:0 20rpx;
+  background:#fff;
+  margin-bottom:20rpx;
+}
+.con-item{
+  min-height:90rpx;
+  padding:0 10rpx;
+  border-bottom:1px solid #f2f2f2;
+}
+.con-item1{
+  padding-right:0;
+}
+.con-item2{
+  padding-top:20rpx;
+  padding-bottom:20rpx;
+}
+.con-text{
+  width:140rpx;
+  font-size:32rpx;
+  line-height:60rpx;
+  color:#333;
+  margin-right:25rpx;
+}
+.con-placeholder{  
+  color:#D8D8D8;
+}
+.con-input{
+  color:#999;
+  padding:0 15rpx;  
+}
+.con-input,.con-placeholder{
+  height:60rpx;
+  font-size:28rpx;
+  line-height:60rpx;
+}
+.con-textarea{
+  height:160rpx;
+  font-size:28rpx;
+  line-height:1.3;
+  padding:20rpx 15rpx;
+}
+.position-img{
+  width:40rpx;
+  height:40rpx;
+  margin:0 10rpx;
+}
+.to-img{
+  width:40rpx;
+  height:40rpx;
+}
+.tip{
+  height:90rpx;
+  font-size:24rpx;
+  line-height:90rpx;
+  color:#999;
+  text-align:center;
+}
+.img-box{
+  width:160rpx;
+  height:160rpx;
+  margin-right:20rpx;
+}
+.con-item2>text{
+  font-size:24rpx;
+  color:#999;
+}
+.btn{
+  margin-top:30rpx;
+}

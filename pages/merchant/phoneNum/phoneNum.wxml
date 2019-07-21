@@ -1,0 +1,9 @@
+<!--pages/merchant/phoneNum/phoneNum.wxml-->
+<view class='container'>
+    <view class='bg-common'>
+       <text class='wenzi'>联系电话与随时兼·职登录账号为一对一绑定关系，若更换则下次将使用新手机登录；更换时需要验证当前联系电话。</text>
+      
+    </view>
+    
+</view>
+

@@ -1,0 +1,66 @@
+<view class="contianer">
+  <view class='head_sxk flex-center'>
+    <navigator hover-class='none' url='/pages/user/location/location' class='flex-center'>
+      <view class='location'>广州</view>
+      <image class='awwor' mode='aspectFill' src="/image/awwor_bot.png" />
+    </navigator>
+    <navigator hover-class='none' url='/pages/user/search/search' class='input-box'>
+      <image src='/image/sx.png' />
+      <view class='input inpus'>搜索你想要的兼职吧</view>
+    </navigator>
+  </view>
+  <banner role='{{role}}'></banner>
+  <notice role='{{role}}'></notice>
+  <view class='sele_item flex-center'>
+    <navigator hover-class='none' url='/pages/user/job/one/one?jobSortType=distance' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon4.gif" />
+      <text>就近兼职</text>
+    </navigator>
+    <navigator hover-class='none' url='/pages/user/job/one/one?jobSortType=isWeekend' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon5.png" />
+      <text>周末兼职</text>
+    </navigator>
+    <navigator url='/pages/user/richText/richText?type=3' hover-class='none' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon1.png" />
+      <text>批量兼职</text>
+    </navigator>
+    <navigator hover-class='none' url='/pages/user/job/all/all' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon3.png" />
+      <text>全部职位</text>
+    </navigator>
+  </view>
+  <view class='recommend'>
+    <view class='recommend-header flex-between'>
+      <view class='title'>为你推荐</view>
+      <navigator hover-class='none' url='/pages/personal/mine/mineResumeEdit/mineResumeEdit' class='intention flex-center'>
+        <text class='common-color'>意向选择</text>
+        <image src='/image/awwor_right.png' class='to'></image>
+      </navigator>
+    </view>
+    <view class='job-wrap'>
+      <block wx:for='{{jobList}}' wx:key='jobList'>
+        <navigator hover-class='none' url='/pages/merchant/detail/jobDetail/jobDetail' class='job'>
+          <view class='job-top flex-between flex-center'>
+            <view class='job-name'>广发银行充场</view>
+            <view class='job-pay'>¥ 300／h</view>
+          </view>
+          <view class='job-site flex-center'>
+            <image class='job-site-img' src='/image/job-location.png'></image>
+            <view class='job-location'>广州国际采购中心</view>
+            <view class='job-tag'>常住附近</view>
+            <view class='job-distance flex-item'>8.5km</view>
+          </view>
+          <view class='job-times flex-center'>
+            <image class='job-time-img' src='/image/job-time.png'></image>
+            <view class='job-time'>03.15～03.16</view>
+          </view>
+        </navigator>
+      </block>
+    </view>
+  </view>
+  <view class='null' wx:if='{{jobList.length === 0}}'>
+      <image src='/image/img/null.png' class='null-icon'></image>
+      <text>没有相关数据~</text>
+  </view>
+  <image src='/image/informationNotice.png' class='msg-img' bindtap='toMsgList'></image>
+</view>

@@ -1,0 +1,11 @@
+<!--pages/merchant/chongzhi/chongzhi.wxml-->
+<view class='logo'>
+   <image src="/image/success.png" wx:if='{{msgData.isSuc}}'></image>
+   <image src="/image/fail.png" wx:else></image>
+</view>
+<text class='t1'>{{msgData.text}}</text>
+<text class='t2'>{{msgData.subText}}</text>
+<block wx:for='{{msgData.button}}' wx:key='button'>
+  <button class='msg-btn' data-url='{{item.btnUrl}}' bindtap='handleClick'>{{item.btnText}}</button>
+</block>
+

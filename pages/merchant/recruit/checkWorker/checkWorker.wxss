@@ -1,0 +1,59 @@
+.container{
+  padding:20rpx;
+}
+.item{
+  height:150rpx;
+  background:#fff;
+  padding:0 15rpx;
+  margin-bottom:20rpx;
+  border-radius:10rpx;
+}
+.headerimg{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right:10rpx;
+  border-radius:100%;
+}
+.phone-img{
+  width:44rpx;
+  height:44rpx;
+  margin-right:6rpx;
+}
+.item-info-top{
+  font-size:30rpx;
+  line-height:1;
+  color:#999;
+  padding-bottom:15rpx;
+  padding-left:10rpx;
+}
+.name{
+  padding-right:30rpx;
+}
+.item-info-phone{
+  font-size:30rpx;
+  line-height:1;
+  color:#4296FF;
+}
+
+.luyong{
+  width: 180rpx;
+  height: 60rpx;
+  background-color: #0C71EF;
+  font-size:30rpx;
+  line-height:60rpx;
+  color:#fff;
+  border-radius:100rpx;
+}
+
+.luyongle{
+  width: 180rpx;
+  height: 60rpx;
+  background-color: #F2F2F2;
+  line-height:60rpx;
+  color:#999999;
+  border-radius:100rpx;
+}
+.gray{
+  background:#F2F2F2;
+  color:#999;
+}

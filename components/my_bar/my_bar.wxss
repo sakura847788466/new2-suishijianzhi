@@ -1,0 +1,51 @@
+@import '/app.wxss';
+.my-bar{
+  position:fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  height:98rpx;
+  background:#fff;
+  border-top:1px solid #f2f2f2;
+  z-index:9999;
+}
+.bar{
+  flex:1;
+}
+.bar-img image{
+  display:block;
+  width:46rpx;
+  height:46rpx;
+  margin:0 auto;
+}
+.bar-text{
+  font-size:22rpx;
+  color:#999;
+  line-height:1;
+  text-align:center;
+  padding-top:8rpx;
+}
+.bar_publish{
+  position:relative;
+}
+.bar_publish .bar-img{
+  position:absolute;
+  top:-30rpx;
+  left:50%;
+  margin-left:-50rpx;
+  width:90rpx;
+  height:90rpx;
+  background:#fff;
+  border-radius:100%;
+  border-top:1px solid #f2f2f2;
+}
+.bar_publish .bar-img image{
+  width:65%;
+  height:65%;
+  margin:10rpx auto 0;
+}
+.bar_publish .bar-text{
+  position:relative;
+  padding-top:54rpx;
+  z-index:2;
+}

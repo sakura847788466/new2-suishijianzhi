@@ -1,0 +1,21 @@
+<view class='container'>
+  <block wx:for='{{staffList}}' wx:key='staffList'>
+    <view class='item flex-center'>
+      <image src='{{item.employeeUserInfo.headerImg}}' class='headerimg'></image>
+      <view class='item-info flex-item'>
+        <view class='item-info-top'>
+          <text class='name'>{{item.employeeUserInfo.userName}}</text>
+          <text class='sex'>{{item.employeeUserInfo.gender === 'MAN' ? "男" : "女"}}</text>
+        </view>
+        <view class='item-info-phone flex-center'>
+          <image class='phone' src='/image/dianhua.png' class='phone-img'></image>{{item.employeeUserInfo.loginPhone}}
+        </view> 
+      </view>
+      <button class='luyong' bindtap='luyong' data-id='{{item.id}}'>录用</button>
+    </view>
+  </block>
+  <view class='null' wx:if='{{staffList.length === 0}}'>
+      <image src='/image/img/null.png' class='null-icon'></image>
+      <text>没有相关数据~</text>
+    </view>
+</view>

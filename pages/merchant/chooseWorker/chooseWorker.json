@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "挑选员工",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "white",
+  "usingComponents": {
+    "stars": "/components/stars/stars"
+  }
+}

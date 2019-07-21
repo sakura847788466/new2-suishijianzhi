@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "填写资料",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "white",
+  "usingComponents": {
+    "citylist": "/components/city/city",
+    "modal": "/components/modal/modal"
+  }
+}

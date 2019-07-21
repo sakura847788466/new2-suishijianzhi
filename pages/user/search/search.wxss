@@ -1,0 +1,39 @@
+@import '/common/style/header-search.wxss';
+page{
+  background:#fff;
+}
+
+.search-btn{
+  width:100rpx;
+  font-size:32rpx;
+  line-height:66rpx;
+  text-align:right;
+  color:#0C71EF;
+  background:#fff;
+  padding-right:10rpx;
+}
+
+.search-wrap{
+  padding:30rpx;
+}
+.search-title>text{
+  font-size:28rpx;
+  font-weight:bold;
+  color:#333;
+}
+.search-items{
+  flex-wrap:wrap;
+}
+.search-items>view{
+  font-size:24rpx;
+  line-height:40rpx;
+  color:#999;
+  padding:0 20rpx;
+  margin:20rpx 20rpx 0 0;
+  border:1px solid #D8D8D8;
+  border-radius:20rpx;
+}
+.del-icon{
+  width:36rpx;
+  height:36rpx;
+}

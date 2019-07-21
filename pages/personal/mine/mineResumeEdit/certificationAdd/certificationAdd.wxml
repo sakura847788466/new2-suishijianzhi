@@ -1,0 +1,16 @@
+<!--pages/personal/mine/mineResumeEdit/certificationAdd/certificationAdd.wxml-->
+<view class='certification-edit'>
+  <view class='name flex-center'>
+    <text class='text-namne'>资料命名</text> 
+    <input placeholder='{{ annexs.name }}' bindconfirm='inputBlur' bindblur='inputBlur'></input>
+  </view>
+  <view class='upload'>资料上传</view>
+  <view class='upload-file flex-center'>
+    <image src='{{ annexs.url }}' bindtap='uploadFile'></image>
+    <text decode='true'>(&nbsp;&nbsp;<text class='offset'>仅支持.jpg格式，小于2M</text>&nbsp;&nbsp;)</text>
+  </view>
+</view>
+<view class='confirm flex-center'>
+  <view class='cancel' bindtap='cancel'>取消</view>
+  <view class='save' bindtap='save'>保存</view>
+</view>

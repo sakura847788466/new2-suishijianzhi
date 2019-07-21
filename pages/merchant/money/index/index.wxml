@@ -1,0 +1,43 @@
+<view class='container'>
+  <view class='top'>
+    <view class='top-title'>可用余额</view>
+    <view class='top-money'>{{money}}<text class='top-rmb'>元</text></view>
+    <view class='money-operation flex-center'>
+      <navigator hover-class='none' url='/pages/merchant/money/recharge/recharge?money={{money}}'class='oper-item flex-text-center flex-center flex-column'>
+        <image src='/image/money/icon1.png' class='money-icon'></image>
+        <view class='oper-item-text' >充值</view>
+      </navigator>
+      <view class='line'></view>
+      <navigator hover-class='none' url='/pages/merchant/money/withdraw/withdraw' class='oper-item flex-text-center flex-center flex-column'>
+        <image src='/image/money/icon2.png' class='money-icon'></image>
+        <view class='oper-item-text'>提现</view>
+      </navigator>
+      <view class='line'></view>
+      <navigator hover-class='none' url='/pages/merchant/money/freezeCash/freezeCash' class='oper-item flex-text-center flex-center flex-column'>
+        <image src='/image/money/icon3.png' class='money-icon'></image>
+        <view class='oper-item-text'>冻结</view>
+      </navigator>
+    </view>
+  </view>
+  <view class='money-detail ' >
+    <view class='jiaoyi'>
+        <text>交易明细</text>
+    </view>
+    <view class='money-list flex-center' wx:for="{{moneyList}}" wx:key="{{key}}">
+      <view class='left flex-item'>
+        <view class='list-name'>充值</view>
+        <view class='list-time'>
+          <text class='data' >{{item.createdTime}}</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>+{{item.totalAmount}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+

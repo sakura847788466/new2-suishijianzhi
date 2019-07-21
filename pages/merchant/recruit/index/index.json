@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "招聘",
+  "usingComponents": {
+    "my-bar": "/components/my_bar/my_bar"
+  }
+}

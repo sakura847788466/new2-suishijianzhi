@@ -1,0 +1,43 @@
+<!--pages/merchant/depostsitDetail/depostsitDetail.wxml-->
+<view class='container'>
+    <view class='top flex-column'>
+        <view class='item'>
+            <text >岗位</text> 
+            <text class='miaoshu'>品牌门店服装导购员</text>     
+        </view>
+        <view class='item'style="height:106rpx;">
+            <text>地点</text>    
+            <text class='miaoshu'>天河区石牌西路1号购物广场</text>     
+        </view>
+        <view class='item' style="height:104rpx;">
+            <text>薪资</text> 
+            <text class='miaoshu'>300元/h</text>     
+        </view>
+        <view class='item' style="height:170rpx;position:relative;">
+            <text>时间</text>      
+            <text class='miaoshu'>1月21号   9:00-20:00</text> 
+            <text class='shijian'>1月21号   9:00-20:00</text>     
+        </view>
+          <view class='item' style="height:104rpx;">
+            <text>人数</text> 
+            <text class='miaoshu renshu'>10人</text>     
+        </view>
+    </view>
+    <text class='zhushi'>*提示：保证金将存在冻结金额，员工完成工作后将根据实际工作时间扣除冻结金额，完成工作后金额多退少补，冻结金额不可提现。</text>
+    <view class='dibu '>
+        <view class='left'>
+            <text>合计：</text>
+            <text>￥<text style="font-size:32rpx;">1150</text></text>
+            <text class='mingxi'>总价明细</text>
+            <image src='/image/top.png' class='tu'></image>
+        </view>
+        <button class='zhifu' bindtap=''>立即支付</button>
+    </view>
+  <!-- 弹出层 -->
+    <view class='tanchu'>
+    
+    
+    
+    </view>
+
+</view>

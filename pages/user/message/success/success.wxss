@@ -1,0 +1,62 @@
+page{
+  background:#fff;
+}
+.logo{
+  height:125px;
+  position:relative;
+}
+.logo image{
+  height:80px;
+  width:80px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-top:-40px;
+  margin-left:-40px;
+}
+.t1{
+  text-align:center;
+  font-size:22px;
+  display:block;
+  margin-bottom: 10px;
+}
+.t2{
+  text-align:center;
+  font-size:16px;
+  display:block;
+  opacity: 0.5;
+  margin-bottom:20px;
+  font-weight: 700px;
+}
+.msg-btn {
+  width:84%;
+  font-size: 18px;
+  color:#ffff;
+  background-color:	#0066ED;
+  border:1px solid #0066ED;
+  margin-top:60rpx;
+}
+.msg-btn:nth-of-type(2){
+  background:#fff;
+  color:#0066ED;
+}
+.wxCash {
+  position: relative;
+  display: block;
+  color:#0066ED;
+  margin-top:38px;
+  margin-right:24px;
+  margin-left:24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.55555556;
+  border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  border:1px solid #0066ED;
+  background:#fff;
+}

@@ -1,0 +1,46 @@
+<!--pages/merchant/shopsetHead/sopsetHead.wxml-->
+<!--pages/merchant/shopIntro/shopIntro.wxml-->
+
+<view class='container'>
+    <view class='bg-common'>
+        <view class='top'>
+          <view class='item ' bindtap='upimg'>
+              <text class='head'>头像</text>
+              <view  wx:if="{{shopinfoList}}">
+                  <image class='head-tu' src='{{shopinfoList.headerImg}}' style='border-radius:112rpx;'></image>
+              </view>
+              <image class='jiantou' src='/image/awwor.png'></image>
+          </view>
+           <view class='item '>
+              <text class='head'>联系人</text>
+              <text class='right'>{{shopinfoList.userName}}</text>
+          </view>
+           <navigator class='item 'url='/pages/merchant/setPinfo/setPinfo?id={{shopinfoList.loginPhone}}'  bindtap='getPhone'>
+              <text class='head' >手机号码</text>
+              <text class='right phoneNum' >{{shopinfoList.loginPhone}}</text>
+              <image class='jiantou' src='/image/awwor.png'></image>
+          </navigator>
+           <view class='item '>
+              <text class='head'>商家名称</text>
+              <text class='right'>{{shopinfoList.employerUserInfo.companyName}}</text>
+          </view>
+          
+        </view>
+        <navigator url='/pages/merchant/setWhere/setWhere' class='item  shop-addr'>
+              <text class='head'>商家地址</text>
+              <image class='jiantou' src='/image/awwor.png'></image>
+        </navigator>
+        <view class='dibu'>
+             <navigator url='/pages/merchant/shangjiaInfo/shangjiaInfo'class='item '>
+                  <text class='head'>商家概况</text>
+                  <text class='right phoneNum'>已填写</text>
+                  <image class='jiantou' src='/image/awwor.png'></image>
+              </navigator> 
+              <view class='item '>
+                  <text class='head'>商家图片</text>
+                  <text class='right phoneNum'>仅支持.jpg格式，小于2M</text>
+                  <image class='jiantou' src='/image/awwor.png'></image>
+             </view>
+        </view>
+    </view>
+</view>

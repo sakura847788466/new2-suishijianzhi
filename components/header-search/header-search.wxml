@@ -1,0 +1,10 @@
+<view class='head_sxk flex-center'>
+  <navigator hover-class='none' url='/pages/user/location/location' class='flex-center'>
+    <view class='location'>{{currentCity}}</view>
+    <image class='awwor' mode='aspectFill' src="/image/awwor_bot.png" />
+  </navigator>
+  <view class='input-box' bindtap='toSearch'>
+    <image src='/image/sx.png' />
+    <view class='input inpus'>{{title ? title : '搜索你想要的兼职吧'}}</view>
+  </view>
+</view>

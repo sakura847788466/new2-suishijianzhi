@@ -1,0 +1,46 @@
+/* pages/merchant/depostsit/depostsit.wxss */
+.tu{
+  position:fixed;
+  left: 159rpx;
+  top: 59.25rpx;
+  width: 433.67rpx;
+  height: 332.97rpx;
+  background-color: rgba(238, 238, 238, 1);
+
+}
+.title{
+  position:fixed;
+  left: 290rpx;
+  top: 412rpx;
+  width: 170rpx;
+  height: 48rpx;
+  color: #333333;
+  font-size: 34rpx;
+  font-family: PingFangSC-Regular;
+
+}
+.left{
+  position:fixed;
+  left: 95rpx;
+  top: 500rpx;
+  width: 240rpx;
+  height: 68rpx;
+  background-color: #0C71EF;
+  line-height:68rpx;
+  color:#fff;
+  border-radius:100rpx;
+
+}
+.right{
+  position:fixed;
+  left: 415rpx;
+  top: 500rpx;
+  width: 240rpx;
+  height: 68rpx;
+  background-color: #0C71EF;
+  line-height:68rpx;
+  color:#fff;
+  border-radius:100rpx;
+
+
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商家中心",
+  "usingComponents": {
+    "my-bar": "/components/my_bar/my_bar"
+  }
+}

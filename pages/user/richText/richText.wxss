@@ -1,0 +1,9 @@
+@import '../../../wxParse/wxParse.wxss';
+page{
+  background:#fff;
+}
+image{
+  display:block;
+  margin:0 auto;
+  max-width:100%;
+}

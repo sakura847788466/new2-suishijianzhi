@@ -1,0 +1,49 @@
+/* menu */
+.mine-menu{
+  padding:50rpx 0 0 0;
+  background:#fff;
+}
+.mine-menu-item{
+  padding:25rpx 25rpx 25rpx 30rpx;
+  border-bottom:1px solid #f2f2f2;
+}
+.mine-menu-text{
+  font-size: 32rpx;
+  font-weight:bold;
+}
+.mine-menu-item .btn-area navigator{
+  padding: 0;
+  margin-top: 4rpx;
+}
+.mine-icon{
+  width: 42rpx;
+  height: 42rpx;
+  margin-right:30rpx;
+}
+.mine-arrow{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.mine-logout{
+  margin-top: 33rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #999;
+  background:#fff;
+}
+
+.mine-find{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+  height: 33rpx;
+  line-height: 33rpx;
+  text-align: center;
+  background: none
+}
+.hover{
+  background-color: #f2f2f2;
+}

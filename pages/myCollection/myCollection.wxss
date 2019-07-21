@@ -1,0 +1,20 @@
+/* pages/myCollection/myCollection.wxss */
+.bg{
+    left: 0rpx;
+    top: 0prx;
+    width: 750rpx;
+    height: 1334rpx;
+    background-color: #fff;
+}
+.item{
+    margin-top:20rpx;
+    width: 750rpx;
+    height: 184rpx;  
+
+}
+.left{
+  flex:1;
+}
+.right{
+  flex:1;
+}

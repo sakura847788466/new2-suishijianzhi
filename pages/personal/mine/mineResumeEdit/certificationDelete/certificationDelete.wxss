@@ -1,0 +1,73 @@
+/* pages/personal/mine/mineResumeEdit/certificationDelete/certificationDelete.wxss */
+.navigator{
+  background-color: #fff;
+  color: black;
+  font-size: 36rpx;
+  padding: 55rpx 40rpx 40rpx 40rpx;
+  text-align: center;
+
+}
+.certification-edit{
+  margin-top: 20rpx;
+  background-color: white;
+}
+.name{
+  padding: 20rpx 40rpx;
+  border-bottom: 1px solid #d8d8d8;
+}
+.text-namne{
+  font-size: 32rpx;
+}
+.certification{
+  flex: 1;
+  text-align: right;
+  color: #666666;
+}
+.upload{
+  padding: 20rpx 40rpx;
+}
+.upload .note{
+  flex: 1;
+  text-align: right;
+  font-size: 24rpx;
+  color: #999999;
+}
+.upload-file{
+  padding: 0 22rpx 20rpx 217rpx;
+}
+.upload-file image{
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 30rpx;
+}
+.upload-file text{
+  font-size: 24rpx;
+  color: #999;
+  text-align: right;
+  flex: 1;
+}
+.offset{
+  position: relative;
+  top: 1rpx;
+}
+
+.confirm{
+  position: absolute;
+  bottom: 0;
+  font-size: 34rpx;
+  width: 100%;
+}
+.confirm view{
+  padding: 26rpx 0;
+  text-align: center;
+}
+.confirm .cancel{
+  flex: 1;
+  background-color: white;
+  color: #0C71EF;
+}
+.confirm .save{
+  flex: 1;
+  background-color: #0C71EF;
+  color: white;
+}

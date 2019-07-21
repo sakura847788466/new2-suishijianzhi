@@ -1,0 +1,22 @@
+<!--pages/merchant/portJob/portJob.wxml-->
+<view class='container bg'>
+  
+      <view class='jianzhi' wx:for="{{list}}" wx:key="{{item}}" >
+         <text class='title'>{{item.title}}</text>
+         <text class='data'>{{item.data}}</text>
+         <text class='time'>{{item.time}}</text>
+
+         
+      </view>
+      <view class='jianzhi last' >
+         <text class='title'>薪资到账</text>
+         <text class='data'>2019/2/21</text>
+         <text class='time'>11:30:32</text>
+         <view class='detail'>
+              <text class='d-time'>2019/2/21  11:30-18:30</text>
+              <text class='c-time'>时长：7小时</text>
+              <text class='z-time'>薪资：¥150</text>
+         </view>
+      </view>
+
+</view>

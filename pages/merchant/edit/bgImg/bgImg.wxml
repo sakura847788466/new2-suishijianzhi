@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='con'>
+    <view class='con-item flex-center' style='border-bottom:none'>
+      <view class='con-text'>商家图片</view>
+      <view class='con-info3 flex-item'>（仅支持.jpg格式，小于2M）</view>
+    </view>
+    <view class='img-box flex'>
+      <block wx:for='{{backgroundImg}}' wx:key='backgroundImg'>
+        <view class='img-item'>
+          <icon type='clear' size='18' data-index='{{index}}' bindtap='cancelImg'></icon>
+          <image src='{{item}}' class='img' data-url='{{item}}' bindtap='prevImg'></image>
+        </view>
+      </block>
+      <image src='/image/add.png' class='img-item' bindtap='addImg' wx:if='{{backgroundImg.length < 4}}'></image>
+    </view>
+  </view>
+  <button class='btn-save' bindtap='save'>保存</button>
+</view>

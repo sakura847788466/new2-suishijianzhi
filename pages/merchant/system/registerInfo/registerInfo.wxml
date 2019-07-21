@@ -1,0 +1,50 @@
+<view class='container'>
+    <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>联</text><text>系</text><text>人</text></view>
+        <input value='{{userName}}' placeholder='请输入您的称呼，某小姐/某先生' placeholder-class='con-placeholder' class='con-input flex-item' bindinput='setUserName'></input>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>联</text><text>系</text><text>方</text><text>式</text></view>
+        <view class='con-input'>{{loginPhone}}</view>
+      </view>
+    </view>
+    <view class='con'>
+      <view class='con-item con-item1 flex-center'>
+        <view class='con-text flex-between'><text>商</text><text>户</text><text>名</text><text>称</text></view>
+        <input value='{{companyName}}' placeholder='请输入商户名称' placeholder-class='con-placeholder' class='con-input flex-item' bindinput='setCompanyName'></input>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>商</text><text>户</text><text>地</text><text>址</text></view>
+        <view class='con-placeholder flex-center flex-item' style='{{ province ? "padding-left:15rpx;color:#999" : ""}}' bindtap='chooseLoaction'>
+          <block wx:if='{{province}}'>{{province}}{{city}}{{area}}</block>
+          <block wx:else>
+            <image src='/image/location.png' class='position-img'></image> <text class='flex-item'>点击选择</text>  <image class='to-img' src='/image/mine-job-detail.png'></image> 
+          </block>
+          
+        </view>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>详</text><text>细</text><text>地</text><text>址</text></view>
+        <input value='{{address}}' placeholder='详细地址，例如00号楼00层00室' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+      </view>
+      <view class='tip'>系统将根据此地址就近寻找符合条件人才</view>
+    </view>
+    <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>商</text><text>户</text><text>概</text><text>况</text></view>
+        <textarea value='{{description}}' placeholder='例如商户成立时间，商户规模；商户性质等。' maxlength='140' placeholder-class='con-placeholder' class='con-textarea flex-item' bindinput='setDescription'></textarea>
+      </view>
+    </view>
+    <view class='con'>
+      <view class='con-item con-item2 flex-center'>
+        <view class='con-text flex-between'><text>营</text><text>业</text><text>执</text><text>照</text></view>
+        <view class='img-box' bindtap='upLoadImg'>
+          <image src='{{licenseUrl}}' wx:if='{{licenseUrl}}' class='img'></image>
+          <image src='/image/upload.png' class='img' wx:else></image>
+        </view>
+        <text>（仅支持.jpg格式，小于2M)</text>
+      </view>
+    </view>
+    <button class='btn' bindtap='toCheck'>提交审核</button>
+</view>

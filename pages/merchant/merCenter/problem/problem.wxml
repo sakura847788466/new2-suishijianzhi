@@ -1,0 +1,25 @@
+<!--pages/merchant/problem/problem.wxml-->
+<view class='container'>
+    <view class='bg-common'>
+      <view class='top'>
+          <view class='chongzhi'>
+              <text>联系电话</text>
+          </view>
+            <view class='shuru'>
+              <input class="weui-input"  placeholder-class='placeholder-style' placeholder='请输入电话号码' bindtap='phoneInput'/>
+            </view>
+    </view>
+    <view class='wenben'>
+       <text>问题描述</text>
+        <textarea class='miaoshu'   placeholder='请输入10个字以上的问题描述以便备注请输入10个字以上的问题描述以便备注请输入10个字以上的问题描述以便备注请输入10个字以上的问题描述以便备注请输入10个字以上的问题描述以便备注' bindinput='problemDes'></textarea>
+    </view>
+
+ <button class='btnn refer'>提交</button>
+  
+    
+    
+    </view>
+
+
+
+</view>

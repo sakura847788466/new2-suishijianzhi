@@ -1,0 +1,80 @@
+<view class='container'>
+  <view class='flex flex-column {{ filterDown ? "fixed" : "" }}'>
+    <header-search title='{{title}}'></header-search>
+    <view class='filtrate-wrap'>
+      <view class='filtrate-items flex-text-around'>
+        <view class='filtrate-item flex-center {{ filterId === 0 && filterDown ? "active" : ""}}' data-id='{{0}}' catchtap='handleFilter'>
+          <text>岗位</text>
+          <image src='/image/down.png' class='filtrate-icon' hidden='{{(filterId === 0 && filterDown)}}'></image>
+          <image src='/image/up.png' class='filtrate-icon' hidden='{{!(filterId === 0 && filterDown)}}'></image>
+        </view>
+        <view class='filtrate-item flex-center {{ filterId === 1 && filterDown ? "active" : ""}}' data-id='{{1}}' catchtap='handleFilter'>
+          <text>区域</text>
+          <image src='/image/down.png' class='filtrate-icon' hidden='{{(filterId === 1 && filterDown)}}'></image>
+          <image src='/image/up.png' class='filtrate-icon' hidden='{{!(filterId === 1 && filterDown)}}'></image>
+        </view>
+        <view class='filtrate-item flex-center {{ filterId === 2 && filterDown ? "active" : ""}}' data-id='{{2}}' catchtap='handleFilter'>
+          <text>排序</text>
+          <image src='/image/down.png' class='filtrate-icon' hidden='{{(filterId === 2 && filterDown)}}'></image>
+          <image src='/image/up.png' class='filtrate-icon' hidden='{{!(filterId === 2 && filterDown)}}'></image>
+        </view>
+      </view>
+      <view class='filtrate-content'>
+        <view class='filtrate-con' hidden='{{filterId !== 0 || !filterDown}}'>
+          <view class='filtrate-title'>请选择岗位</view>
+          <view class='choose-wrap flex'>
+            <view class='{{currentJobTypeId === "" ? "active" : ""}}' data-id='' catchtap='chooseJobType'>全部</view>
+            <block wx:for='{{jobType}}' wx:key='jobtype'>
+              <view class='{{currentJobTypeId === item.id ? "active" : ""}}' data-id='{{item.id}}' catchtap='chooseJobType'>{{item.name}}</view>
+            </block>
+          </view>
+          <button class='filtrate-btn' catchtap='hideFilter'>确定</button>
+        </view>
+        <view class='filtrate-con' hidden='{{filterId !== 1 || !filterDown}}'>
+          <view class='filtrate-title'>请选择区域</view>
+          <view class='choose-wrap flex'>
+            <view class='{{currentAreaCode === "" ? "active" : ""}}' data-code='' bindtap='chooseArea'>全部</view>
+            <block wx:for='{{areaList}}' wx:key='areaList'>
+              <view class='{{currentAreaCode === item.code ? "active" : ""}}' data-code='{{item.code}}' bindtap='chooseArea'>{{item.name}}</view>
+            </block>
+          </view>
+          <button class='filtrate-btn' catchtap='hideFilter'>确定</button>
+        </view>
+        <view class='filtrate-con' hidden='{{filterId !== 2 || !filterDown}}'>
+          <view class='filtrate-title'>请选择排序</view>
+          <view class='choose-wrap2'>
+            <view class='{{currentJobSortType === "none" ? "active" : ""}}' data-value='none' bindtap='chooseSort'>不限</view>
+            <view class='{{currentJobSortType === "time" ? "active" : ""}}' data-value='time' bindtap='chooseSort'>最近发布</view>
+            <view class='{{currentJobSortType === "distance" ? "active" : ""}}' data-value='distance' bindtap='chooseSort'>距离从近到远</view>
+            <view class='{{currentJobSortType === "hourlyPay" ? "active" : ""}}' data-value='hourlyPay' bindtap='chooseSort'>薪资由高到低</view>
+          </view>
+          <button class='filtrate-btn' catchtap='hideFilter'>确定</button>
+        </view>
+      </view>
+    </view>
+    <view class='mask flex-item' wx:if='{{filterDown}}' bindtap='handleFilter2'></view>
+  </view>
+  <view class='null' wx:if='{{jobList.length === 0}}'>
+    <image src='/image/img/null.png' class='null-icon'></image>
+    <text>没有相关数据~</text>
+  </view>
+  <view class='job-wrap' wx:else>
+    <block wx:for='{{jobList}}' wx:key='jobList'>
+      <view class='job' data-id='{{item.id}}' bindtap='toJobDetail'>
+        <view class='job-top flex-between flex-center'>
+          <view class='job-name'>{{item.title}}</view>
+          <view class='job-pay'>¥ {{item.hourlyPay}}／h</view>
+        </view>
+        <view class='job-site flex-center'>
+          <image class='job-site-img' src='/image/job-location.png'></image>
+          <view class='job-location flex-item line1'>{{item.address}}</view>
+          <view class='job-distance'>{{item.distance}}km</view>
+        </view>
+        <view class='job-times flex-center'>
+          <image class='job-time-img' src='/image/job-time.png'></image>
+          <view class='job-time'>{{item.workStartTime}}～{{item.workEndTime}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

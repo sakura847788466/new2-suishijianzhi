@@ -1,0 +1,441 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.3",
+	"appid": "wx7d17c36ae7c3ddf3",
+	"projectname": "%E9%9A%8F%E6%97%B6%E5%85%BC%E8%81%8C",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 35,
+			"list": [
+				{
+					"id": -1,
+					"name": "用户选择",
+					"pathName": "pages/user/userSelect/userSelect",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "商户注册",
+					"pathName": "pages/merchant/system/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商户填写资料",
+					"pathName": "pages/user/fillInInformation/fillInInformation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "商户首页",
+					"pathName": "pages/merchant/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "商家-入驻商家",
+					"pathName": "pages/merchant/nav/enterMerchant/enterMerchant",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人首页",
+					"pathName": "pages/personal/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "授权页",
+					"pathName": "pages/user/authorize/authorize",
+					"query": ""
+				},
+				{
+					"id": 7,
+					"name": "商家中心",
+					"pathName": "pages/merchant/merCenter/index/index",
+					"query": ""
+				},
+				{
+					"id": 8,
+					"name": "充值成功",
+					"pathName": "pages/user/message/success/success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "冻结资金",
+					"pathName": "pages/merchant/money/freezeCash/freezeCash",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "充值",
+					"pathName": "pages/merchant/money/recharge/recharge",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "钱包",
+					"pathName": "pages/merchant/money/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 12,
+					"name": "意见反馈",
+					"pathName": "pages/merchant/merCenter/problem/problem",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人注册",
+					"pathName": "pages/personal/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "商户登录",
+					"pathName": "pages/merchant/system/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mine",
+					"pathName": "pages/personal/mine/mine",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "余额提现",
+					"pathName": "pages/merchant/money/withdraw/withdraw",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 17,
+					"name": "mineResume",
+					"pathName": "pages/personal/mine/mineResume/mineResume",
+					"query": "id=1234",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "填写商家概况",
+					"pathName": "pages/merchant/edit/description/description",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mineResumeEdit",
+					"pathName": "pages/personal/mine/mineResumeEdit/mineResumeEdit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "更改地址",
+					"pathName": "pages/merchant/setWhere/setWhere",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 21,
+					"name": "招聘列表",
+					"pathName": "pages/merchant/recruit/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 22,
+					"name": "商家详情",
+					"pathName": "pages/merchant/detail/merchantDetail/merchantDetail",
+					"query": "id=3005",
+					"scene": null
+				},
+				{
+					"id": 36,
+					"name": "商家简介-更改联系人",
+					"pathName": "pages/merchant/shopIntro/shopIntro",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "更换手机号",
+					"pathName": "pages/merchant/phoneNum/phoneNum",
+					"query": ""
+				},
+				{
+					"id": 25,
+					"name": "商家简介-更改头像",
+					"pathName": "pages/merchant/shopsetHead/sopsetHead",
+					"query": ""
+				},
+				{
+					"id": 26,
+					"name": "商家简介-更改联系方式",
+					"pathName": "pages/merchant/edit/phone/phone",
+					"query": "oldPhone=18819281927",
+					"scene": null
+				},
+				{
+					"id": 30,
+					"name": "商家简介-更改l联系方式1",
+					"pathName": "pages/merchant/setInfoo/setInfoo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 28,
+					"name": "修改密码",
+					"pathName": "pages/merchant/system/password/password",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "职位描述",
+					"pathName": "pages/merchant/zhiweimiaoshu/zhiweimiaoshu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布职位",
+					"pathName": "pages/merchant/post/post",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "交保证金",
+					"pathName": "pages/merchant/depostsit/depostsit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "交保证金2",
+					"pathName": "pages/merchant/depostsitTwo/depostsitTwo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "挑选员工",
+					"pathName": "pages/merchant/chooseWorker/chooseWorker",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "打卡",
+					"pathName": "pages/merchant/daka/daka",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 35,
+					"name": "查看员工",
+					"pathName": "pages/merchant/recruit/checkWorker/checkWorker",
+					"query": "id=3088",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "定位",
+					"pathName": "pages/user/location/location",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "职位搜索",
+					"pathName": "pages/user/search/search",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "全部兼职",
+					"pathName": "pages/user/job/all/all",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 40,
+					"name": "兼职详情",
+					"pathName": "pages/merchant/detail/jobDetail/jobDetail",
+					"query": "id=3088",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个别兼职列表",
+					"pathName": "pages/user/job/one/one",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消息中心",
+					"pathName": "pages/user/msgList/msgList",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "抢单",
+					"pathName": "pages/personal/grab/grab",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 45,
+					"name": "本月累计时长",
+					"pathName": "pages/merchant/moomAdd/moomAddr",
+					"query": ""
+				},
+				{
+					"id": 46,
+					"name": "我的推荐",
+					"pathName": "pages/merchant/tuijian/tuijian",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "兼职明细",
+					"pathName": "pages/merchant/portJob/portJob",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "minePurse",
+					"pathName": "pages/personal/mine/minePurse/minePurse",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "certificationAdd",
+					"pathName": "pages/personal/mine/mineResumeEdit/certificationAdd/certificationAdd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "certificationDelete",
+					"pathName": "pages/personal/mine/mineResumeEdit/certificationDelete/certificationDelete",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "changeLocation",
+					"pathName": "pages/personal/mine/mineResumeEdit/changeLocation/changeLocation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mineCollection",
+					"pathName": "pages/personal/mine/mineCollection/mineCollection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mineRecomand",
+					"pathName": "pages/personal/mine/mineRecomand/mineRecomand",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 54,
+					"name": "用户注册",
+					"pathName": "pages/personal/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "资料填写",
+					"pathName": "pages/merchant/system/registerInfo/registerInfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "发布职位--new",
+					"pathName": "pages/merchant/recruit/post/post",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 56,
+					"name": "编辑商家简介--new",
+					"pathName": "pages/merchant/edit/index/index",
+					"query": "id=3005",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "商家图片",
+					"pathName": "pages/merchant/edit/bgImg/bgImg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "交保证金--new",
+					"pathName": "pages/merchant/recruit/payDeposit/payDeposit",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

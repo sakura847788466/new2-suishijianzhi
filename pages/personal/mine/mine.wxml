@@ -1,0 +1,67 @@
+<!-- 加了背景色后星星显示不出来 -->
+<view class='container'>
+  <view class="mine-header">
+    <view class="flex">
+      <image class='logo' src='{{ user.avatar }}'></image>
+      <view class='flex-item mine-name'>
+        <text>{{user.username}}</text>
+        <view class='main_center'>
+          <stars id="stars" key="2.5" eventOpening="true">
+          </stars>
+        </view>
+      </view>
+      <view class='mine-header-right'>
+        完善简历
+        <navigator url="/pages/personal/mine/mineResumeEdit/mineResumeEdit" hover-class="navigator-hover">
+          <button class='mine-btn font_26'>编辑</button>
+        </navigator>
+      </view>
+    </view> 
+  </view>
+
+  <view class='mine-data flex'>
+    <view class='mine-data-left flex-item' bindtap='toMinePurse'>
+      <view class='mine-data-left-top'>{{ user.accountBalance }}</view>
+      <view class='mine-data-left-bottom'>余额</view>
+    </view>
+
+    <view class='mine-data-right flex-item' bindtap='toAddMoom'>
+      <image src='/image/reword.png' class='mine-reword'></image>
+      <view class='mine-data-right-top'>{{ workTimeLong }}h</view>
+      <view class='mine-data-right-bottom'>本月累积时长</view>
+    </view>
+  </view>
+
+  <!-- menu -->
+  <view class='mine-menu'>
+    <navigator hover-class='none' url='./mineResume/mineResume' hover-class='hover' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/mine-resume.png"></image>
+      <view class='flex-item mine-menu-text'>我的简历</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator>
+    <navigator hover-class='none' url='./mineRecomand/mineRecomand' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/mine-recomend.png"></image>
+      <view class='flex-item mine-menu-text'>我的推荐</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator>
+    <navigator hover-class='none' url='./mineCollection/mineCollection' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/mine-collection.png"></image>
+      <view class='flex-item mine-menu-text'>我的收藏</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator>
+    <view class='mine-menu-item flex-center' bindtap='toContact'>
+      <image class='mine-icon' src="/image/mine-contact-us.png"></image>
+      <view class='flex-item mine-menu-text'>联系客服</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </view>
+    <navigator hover-class='none' url='../../merchant/merCenter/problem/problem' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/mine-feedback.png"></image>
+      <view class='flex-item mine-menu-text'>意见反馈</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator>
+  </view>
+
+  <view class='mine-logout' bindtap="logout">退出登录</view>
+
+  <view class='mine-find'>找兼职就上随时兼 · 职</view>
+</view>

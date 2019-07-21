@@ -1,0 +1,135 @@
+<view wx:if="{{hiddState==1}}" class='container'>
+  <view class="items_box">
+    <view class='items itemBor'>
+      <text>联系人</text>
+      <input placeholder-class='inpus' placeholder='请输入您的称呼，某小姐/某先生' />
+    </view>
+    <view class='items'>
+      <text>联系方式</text>
+      <input placeholder-class='inpus' placeholder='请输入手机号' />
+    </view>
+  </view>
+  <view class="items_box pad_bot">
+    <view class='items itemBor'>
+      <text>商户名称</text>
+      <input placeholder-class='inpus' placeholder='请输入商户名称' />
+    </view>
+    <view class='items itemBor'>
+      <text>商户地址</text>
+      <view wx:if='{{address=="点击选择"}}' class='position flex-center flex-item'>
+        <image src="/image/position.png" />{{address}}
+      </view>
+      <view class='flex-center flex-item pos_mar_left' hidden='{{address=="点击选择"}}'>{{address}}</view>
+      <image class='awwor' src='/image/awwor.png' />
+    </view>
+    <view class='items itemBor'>
+      <text>门牌号</text>
+      <input placeholder-class='inpus' placeholder='详细地址，例如00号楼00层00室' />
+    </view>
+  </view>
+  <view class="items_box">
+    <view class='items'>
+      <text>商户简介</text>
+      <textarea bindinput='textArea' maxlength='140' placeholder-class='inpus' placeholder='例如商户成立时间，商户规模；商户性 质等'>
+        <view>
+          <span>{{cursor}}</span>/140</view>
+      </textarea>
+    </view>
+  </view>
+  <view class="items_box">
+    <view class='items items_start'>
+      <text>营业执照</text>
+      <view class='flex' wx:if='{{imgState}}'>
+        <image catchtap='selectImg' class='zyjs' src='/image/upload.png' />
+        <text class='min_2m'>（仅支持.jpg格式，小于2M)</text>
+      </view>
+      <image catchtap='selectImg' mode="aspectFit" hidden='{{imgState}}' src='{{imgUrl}}' />
+    </view>
+  </view>
+  <view class="items_box">
+    <view class='items items_sb itemBor'>
+      <text>其他认证资料</text>
+      <view class='add flex-item flex-right' bindtap='add' data-ind='2'>
+        <text>+ </text>添加</view>
+    </view>
+    <view class='items itemBor txt_flex'>
+      <text>法人身份证</text>
+      <image class='awwor' src='/image/awwor.png' />
+    </view>
+    <view class='items itemBor txt_flex'>
+      <text>食品安全证</text>
+      <image class='awwor' src='/image/awwor.png' />
+    </view>
+    <view class='items txt_flex'>
+      <text>WW身份证</text>
+      <image class='awwor' src='/image/awwor.png' />
+    </view>
+  </view>
+  <view class='btn_box'>
+    <button class='btn' form-type="submit">提交审核</button>
+  </view>
+</view>
+
+<view wx:elif="{{hiddState==2}}">
+  <view class='container'>
+    <view class="items_box">
+      <view class='items itemBor items_sb'>
+        <text>资料命名</text>
+        <input placeholder-class='inpus' placeholder='请填写，例如法人身份证' />
+      </view>
+      <view class='items_start'>
+        <view class='data_upload'>资料上传</view>
+        <view class='flex-center' wx:if='{{imgState}}'>
+          <image catchtap='selectImg' class='add_img' src='/image/add.png' />
+          <text class='min_2m'>（仅支持.jpg格式，小于2M)</text>
+        </view>
+        <image catchtap='selectImg' mode="aspectFit" hidden='{{imgState}}' src='{{imgUrl}}' />
+      </view>
+    </view>
+    <view class='meun flex text-center'>
+      <view class='flex-item font_30' catchtap='add' data-ind='1'>取消</view>
+      <view class='flex-item font_30' catchtap='preservation' data-ind='1'>保存</view>
+    </view>
+  </view>
+</view>
+
+<view class='bg_white' style='min-height:{{winHeight}}px;' wx:elif="{{hiddState==3}}">
+  <view class='heads flex bor_bot'>
+    <view class='flex-center' catchtap='add' data-ind="4">{{city}}市
+      <image class='arrow_bot' src='/image/awwor_bot.png' />
+    </view>
+    <input class='flex-item sxk' value='{{sxkVal}}' placeholder-class='inpus' bindinput='binInput' placeholder='请输入地址'>
+    <image class='sx_icon' mode='aspectFit' src='/image/sx.png' />
+    <image catchtap='cancel' hidden='{{valLength==0}}' class='cancel_icon' mode='aspectFit' src='/image/cancel.png' />
+    </input>
+  </view>
+  <view class='nearby flex-center color9 bor_bot'>
+    <image mode='aspectFit' src='/image/position.png' /> 附近地址
+  </view>
+  <view class='box_item'>
+    <view class='bor_bot'>
+      <view class='flex-between font_30'>广州国际采购中心
+        <text class='color8'>0.8km</text>
+      </view>
+      <text class='color8'>广州市海珠区</text>
+    </view>
+    <view class='bor_bot font_30'>保利广场</view>
+    <view class='bor_bot font_30'>保利世界贸易中心B</view>
+    <view class='bor_bot font_30'>广州国际采购中心南塔</view>
+    <view class='bor_bot font_30'>广州国际采购中心东广场</view>
+  </view>
+  <view class='group'>
+    <image src='/image/group.png' />
+    <text class='color9 text-center'>搜索不到您要的结果，换个关键词试试哦～</text>
+  </view>
+</view>
+<citylist wx:elif="{{hiddState==4}}" styles='height:{{winHeight}}px;' bindcitytap='cityTap'></citylist>
+<!-- 引用组件的页面模版 -->
+<button bindtap="showDialog">点击显示</button>
+<modal id='modal' 
+    modalTitle='提交成功' 
+    modalMsg='审核结果将通过短信方式发 至您的手机号。' 
+    sure='确认'
+    bind:cancelEvent="_cancelEvent"  
+    bind:confirmEvent="_confirmEvent">
+</modal>

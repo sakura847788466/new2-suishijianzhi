@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='null' wx:if='{{merList.length === 0}}'>  
+    <image src='/image/img/null.png' class='null-icon'></image>
+    <text>没有相关数据~</text>
+  </view>
+  <view class='firm-wrap'>
+      <block wx:for='{{merList}}' wx:key='merList'>
+        <view class='firm flex-center' data-id='{{item.id}}' bindtap='toMerchantDetail'>
+          <image class='firm-logo' src='{{item.headerImg}}'></image>
+          <view class='firm-info flex-item'>
+            <view class='firm-name'>{{item.employerUserInfo.companyName}}</view>
+            <view class='firm-detail'>
+              <text>发布兼职：10次</text>
+              <text>招聘人数：100人</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+</view>

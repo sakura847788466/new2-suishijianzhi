@@ -1,0 +1,68 @@
+<!--pages/merchant/chooseWorker/chooseWorker.wxml-->
+<view class='container'>
+    <view class='item flex'  wx:for="{{workerList}}" wx:key="{key}">
+       <view class='left'>
+            <image src='/image/mine-selfie.png' class='tu'></image>
+       </view>
+       <view class='zhongjian'>
+            <view class='name'>
+                  <text ></text>
+            </view>
+            <view class="info">
+                <text class='age'>20岁</text>
+                <text class='sex'>女</text>
+                <text class='study'>本科</text>
+            </view>
+            <view class='main_center'>
+                   <stars id="stars" key="2.5" eventOpening="true">
+                   </stars>
+            </view>
+       </view>
+       <view class='right'>
+          <button class='luyongle' bindtap='click' data-status="true">已录用</button>
+       </view>
+    </view>
+    
+
+     <view class='item flex'>
+       <view class='left'>
+            <image src='/image/mine-selfie.png' class='tu'></image>
+       </view>
+       <view class='zhongjian' >
+            <view class='name'>
+                  <text >爱好</text>
+            </view>
+            <view class="info">
+                <text class='age'>20岁</text>
+                <text class='sex'>女</text>
+                <text class='study'>本科</text>
+            </view>
+            <view class='main_center'>
+                   <stars id="stars" key="2.5" eventOpening="true">
+                   </stars>
+            </view>
+       </view>
+       <view class='right'>
+          <button class='luyong' bindtap='click' data-status="flase">录用</button>
+       </view>
+    </view>
+    
+     <!-- <view class='item flex'>
+        <view class='left'>
+            <image src='/image/mine-selfie.png' class='tu'></image>
+             <view class='flex-column'>
+              <text class='name'>速速酥</text>
+              <text class='age'>20岁</text>
+              <text class='sex'>女</text>
+              <text class='study'>本科</text>
+              <view class='main_center'>
+                   <stars id="stars" key="2.5" eventOpening="true">
+                   </stars>
+               </view>
+        </view> 
+        </view>
+        <view class='right'>
+          <button class='luyongle' bindtap='luyong'>已录用</button>
+        </view>
+    </view> -->
+</view>

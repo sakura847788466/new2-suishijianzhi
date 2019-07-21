@@ -1,0 +1,30 @@
+@import '/app.wxss';
+.notice-wrap{
+  background:#fff;
+  padding:0 20rpx;
+}
+.notice {
+  height:48rpx;
+  padding:0 15rpx;
+  border-radius: 8rpx;
+  background-color: #f2f2f2;
+}
+.notice image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right:10rpx;
+}
+.notice-content{
+  flex:1;
+  position:relative;
+  height:48rpx;
+  white-space:nowrap;
+  overflow:hidden;
+}
+.notice-content-text{
+  position:absolute;
+  top:0;
+  left:0;
+  font-size:24rpx;
+  line-height:48rpx;
+}

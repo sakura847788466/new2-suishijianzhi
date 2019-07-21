@@ -1,0 +1,14 @@
+/* pages/merchant/phoneNum/phoneNum.wxss */
+
+  .wenzi{
+      position:fixed;
+      left: 33rpx;
+      top: 188rpx;
+      width: 684rpx;
+      height: 66rpx;
+      color: #999999;
+      font-size: 24rpx;
+      font-family: PingFangSC-Regular;
+
+    
+    }

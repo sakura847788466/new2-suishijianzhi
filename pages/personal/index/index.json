@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "notice":"/components/notice/notice",
+    "banner": "/components/banner/banner"
+  },
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "white"
+}

@@ -1,0 +1,84 @@
+/* pages/merchant/post/post.wxss */
+@import "../../../weui.wxss";
+.item{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 90rpx;
+  background-color:#fff;
+  border-bottom:1rpx solid #f2f2f2;
+}
+.item text{
+  flex:1;
+  color: #333333;
+  line-height:90rpx;
+  margin-left:20rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular;
+
+}
+.item .shuruInput{
+  display:inline-block;
+  height: 40rpx;
+  color: #B6B6B6;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+
+}
+
+.item .shuru{
+  margin-top:18rpx;
+  display:inline-block;
+  height: 40rpx;
+  color: #B6B6B6;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+
+}
+.item .right{
+  flex:1;
+  height:84rpx;
+}
+.right .jiantou{
+  margin-top:18rpx;
+  margin-right:20rpx;
+  width: 44rpx;
+  height: 44rpx;
+
+}
+.right .num{
+    margin-left:40rpx;
+}
+.titleb{
+  height:90rpx;
+
+}
+
+.title{
+  position:fixed;
+  left: 40rpx;
+  top: 700rpx;
+  width: 656rpx;
+  color: #999999;
+  font-size: 22rpx;
+  font-family: PingFangSC-Regular;
+
+}
+
+
+.btnnn{
+  margin: 0 auto;
+  color: white;
+  line-height: 1.4;
+  font-size: 34rpx;
+  text-align: center;
+  padding: 20rpx 30rpx;
+  background-color: #0c71ef;
+  position:fixed;
+  left: 0rpx;
+  bottom: 0rpx;
+  width: 750rpx;
+  margin-top:63rpx;
+
+
+}

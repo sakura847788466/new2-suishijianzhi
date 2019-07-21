@@ -1,0 +1,9 @@
+<view class='mer-location-box' bindtap='toMap'>
+  <image src='/image/img/map.png' class='mer-location-bg img'></image>
+  <view class='mer-location-text-wrap flex-center flex-text-center'>
+    <view class='mer-location-text flex-center'>
+      <image src='/image/position2.png' class='mer-location-icon'></image>
+      <text class='flex-item'>{{province}}{{city}}{{area}}{{address}}</text>
+    </view>
+  </view>
+</view>

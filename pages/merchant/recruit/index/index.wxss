@@ -1,0 +1,67 @@
+@import '/common/style/job-item.wxss';
+.container{
+  padding-top:80rpx;
+  padding-bottom:98rpx;
+}
+.classify-wrap{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  background:#fff;
+  z-index:999;
+}
+.classify-item{
+  position:relative;
+}
+.classify-text{
+  font-size:28rpx;
+  color:#666;
+  line-height:80rpx;
+  text-align:center;
+}
+.classify-text.active{
+  /* font-size:30rpx; */
+  font-weight:bold;
+  color:#333;
+}
+.classify-text.active::after{
+  display:block;
+  content:'';
+  position:absolute;
+  left:50%;
+  bottom:0;
+  width:64rpx;
+  height:5rpx;
+  margin-left:-32rpx;
+  background:#0C71EF;
+  border-radius:8rpx;
+}
+
+.recruit-wrap{
+  padding:20rpx;
+}
+.recruit-item{
+  background:#fff;
+  border-radius:8rpx;
+  overflow:hidden;
+  margin-bottom:20rpx;
+}
+.recruit-top{
+  padding:15rpx 20rpx;
+  border-bottom:1px solid #f2f2f2;
+}
+.recruit-status{
+  font-size:32rpx;
+  color:#333;
+  font-weight:bold;
+}
+.recruit-tip{
+  font-size:24rpx;
+  color:#999;
+}
+
+/* 覆盖样式 */
+.job{
+  padding:25rpx 20rpx;
+}

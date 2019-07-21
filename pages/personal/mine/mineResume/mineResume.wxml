@@ -1,0 +1,56 @@
+<!--pages/personal/mine/mineResume/mineResume.wxml-->
+<view class="mine-header">
+  <view class="flex">
+    <image class='logo' src='{{ user.avatar }}'></image>
+    <view class='flex-item'>
+      <view class='main_center'>
+        <view class='mine-name'>{{ user.username }}</view>
+        <view class='mine-info'>
+          {{ age }}岁
+          <text></text>
+          {{ user.sex }}
+          <text></text>
+          {{ user.education }}
+        </view>
+        <!-- <stars id="stars" key="2.5" eventOpening="true">
+        </stars> -->
+      </view>
+    </view>
+    <view class='mine-header-right'>
+      <navigator url="/pages/personal/mine/mineResumeEdit/mineResumeEdit" hover-class="navigator-hover">
+        <button class='mine-btn font_26'>编辑</button>
+      </navigator>
+    </view>
+  </view>
+  <view class='mine-header-bottom'>
+    <view class='mine-phone'>手机 : {{ user.phone }} </view>
+    <view class='mine-phone'>累计时间 : {{ user.howLong }}小时 </view>
+  </view>
+</view>
+
+<view class='mine-willing'>
+  <view class='mine-willing-title'>工作经验及意向岗位</view>
+  <view class='mine-willing-wrapper' wx:for="{{ job }}" wx:key="*this">
+    <view class='mine-willing-item'>
+      {{ item.job }}
+      <text class='mine-time'>{{ item.time }}</text>
+    </view>
+  </view>
+</view>
+
+<view class='mine-addr'>
+  <view class='mine-addr-title'>常住地址</view>
+  <view class='mine-addr-detail'>广州市琶洲国际采购中心</view>
+</view>
+
+<view class='mine-certification'>
+  <view class='mine-certification-title'>资历、资质及获奖证书</view>
+  <view class='pic'>
+    <view class='mine-pic-wrapper' wx:for="{{ certificate }}" wx:key="*this">
+      <image class='mine-pic' src='{{ item.pic }}'></image>
+      <text>{{ item.name }}</text>
+    </view>
+  </view>  
+</view>
+
+<view class='nomore'>没有更多信息啦～</view>

@@ -1,0 +1,52 @@
+.weui-media-box__desc{
+  padding:60rpx 30rpx;
+  color: #999999 ;
+  font-size: 24rpx;
+ }
+.input-box{
+  padding:0 30rpx;
+  background-color: #fff;
+}
+.input-item{
+  height:94rpx;
+  border-bottom: 1px solid #eee;
+  
+}
+
+.input-item>text{
+  width:200rpx;
+  color: #333;
+  font-size: 32rpx;
+}
+.input-item input,.placeholder{
+  height:90rpx;
+  font-size: 32rpx;
+  line-height:90rpx;
+  color: #999;
+}
+.input-item input{
+  padding:0 30rpx;
+}
+.border{
+  width:2rpx;
+  height:40rpx;
+  background:#DDDDDD;
+}
+.getCode{
+  font-size:26rpx;
+  line-height:50rpx;
+  color:#0C71EF;
+  background:#fafafa;
+  padding:0 15rpx;
+  border-radius:6rpx;
+  margin-left:30rpx;
+}
+.btn-save{
+  width: 600rpx;
+  height: 88rpx;
+  font-size:36rpx;
+  line-height:88rpx;
+  color:#fff;
+  background-color: #0C71EF;
+  margin-top:40rpx;
+}

@@ -1,0 +1,42 @@
+@import '/common/style/money-list.wxss';
+
+.top{
+  position:relative;
+  height:190px;
+}
+.money-detail{
+  padding-top:100rpx;
+}
+.money-operation{
+  position:absolute;
+  width:604rpx;
+  left:50%;
+  bottom:-60rpx;
+  margin-left:-302rpx;
+  background:#fff;
+  border-radius:8rpx;
+  box-shadow:0 10rpx 25rpx #ccc;
+}
+.oper-item{
+  width:200rpx;
+  padding:35rpx 0;
+}
+.money-icon{
+  width:50rpx;
+  height:50rpx;
+}
+.oper-item-text{
+  font-size:32rpx;
+  line-height:1;
+  color:#333;
+  text-align:center;
+  padding-top:15rpx;
+}
+.line{
+  width:2rpx;
+  height:60rpx;
+  background:#D6D7DC;
+}
+
+
+

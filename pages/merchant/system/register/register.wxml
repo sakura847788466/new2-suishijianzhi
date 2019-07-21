@@ -1,0 +1,26 @@
+<view class="container">
+  <view class='phone_box'>
+   <view class='phone-item flex-center'>
+    <input type='number' maxlength='11' class='flex-item' placeholder-class='placeholder-style' placeholder='请输入手机号码' bindinput='setPhone' />
+   </view>
+   <view class='phone-item flex-center'>
+    <input class='flex-item' placeholder-class='placeholder-style' placeholder='请输入验证码' bindinput='setCode'/>
+    <span bindtap='getCode' wx:if='{{isCode}}'>获取验证码</span><span wx:else>{{second}}s后重新获取</span>
+   </view>
+   <view class='phone-item flex-center'>
+    <input type='password' value='{{password}}' class='flex-item' placeholder-class='placeholder-style' placeholder='请输入密码' bindinput='setPassword' wx:if='{{eyeOpen}}'/>
+    <input type='text' value='{{password}}' class='flex-item' placeholder-class='placeholder-style' placeholder='请输入密码' bindinput='setPassword' wx:else/>
+    <image src='/image/eye.png' class='eye' wx:if='{{eyeOpen}}' catchtap='handleEyeOpen'></image><image src='/image/eye-close.png' class='eye'  catchtap='handleEyeOpen' wx:else></image>
+   </view>
+   <view class='phone-item flex-center'>
+    <input type='password' value='{{password_again}}' class='flex-item' placeholder-class='placeholder-style' placeholder='请再次输入密码' bindinput='setPassword_again' wx:if='{{eyeOpen_again}}'/>
+    <input type='text' value='{{password_again}}' class='flex-item' placeholder-class='placeholder-style' placeholder='请再次输入密码' bindinput='setPassword_again' wx:else/>
+    <image src='/image/eye.png' class='eye' catchtap='handleEyeOpen_again' wx:if='{{eyeOpen_again}}'></image><image src='/image/eye-close.png' class='eye' catchtap='handleEyeOpen_again' wx:else></image>
+   </view>
+   <view class='clause flex-center'>
+    <icon type='success_circle' color='#0695FF' size='18' wx:if='{{isAgrred}}' bindtap='agrredClause'></icon><icon type='circle' size='18'  bindtap='agrredClause' wx:else></icon>
+    <view class='clause-tip'>我已阅读阅读并同意<text>服务条款</text></view>
+   </view>
+   <view class='btn' catchtap='toRegister'>注册</view>
+  </view>
+</view>

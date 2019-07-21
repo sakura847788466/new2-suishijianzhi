@@ -1,0 +1,23 @@
+.firm{
+  padding:20rpx;
+  border-bottom:1px solid #f2f2f2;
+  background:#fff;
+}
+.firm-logo{
+  width:95rpx;
+  height:95rpx;
+  border-radius:100%;
+  margin-right:20rpx;
+}
+.firm-name{
+  font-size:28rpx;
+  color:#333;
+}
+.firm-detail{
+  font-size:24rpx;
+  color:#999;
+  padding-top:20rpx;
+}
+.firm-detail>text{
+  padding-right:30rpx;
+}

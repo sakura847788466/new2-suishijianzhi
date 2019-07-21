@@ -1,0 +1,97 @@
+/* pages/merchant/depostsitDetail/depostsitDetail.wxss */
+.top{
+  
+  width: 750rpx;
+  /* height: 522rpx; */
+  background-color: #fff;
+
+}
+.top .item{
+    margin: 0 30rpx 0 30rpx;
+    height:120rpx;
+    border-bottom:1px solid #DDDDDD;
+}
+.top .item text{
+  line-height: 128rpx;
+  color:#333333;
+  font-size:32rpx;
+}
+.top .item .miaoshu{
+  margin-left:100rpx;
+  color:#666666;
+  font-size:28rpx;
+}
+.top .item .shijian{
+  position:absolute;
+  top:54rpx;
+  left:164rpx;
+  font-size:28rpx;
+  color:#666666;
+
+
+}
+
+.zhushi{
+  position:fixed;
+    left: 40rpx;
+    top: 620rpx;
+    width: 671rpx;
+    height: 60rpx;
+    line-height: 30rpx;
+    color: #999999;
+    font-size: 20rpx;
+    text-align: left;
+    font-family: PingFangSC-Regular;
+
+
+}
+.dibu{
+  position:fixed;
+  left: 0px;
+  bottom:0rpx;
+  width: 750rpx;
+  height: 100rpx;
+  background-color: #fff;
+  
+
+}
+.dibu .left{
+  position:fixed;
+  left: 40rpx;
+  top: 1160rpx;
+  height: 50rpx;
+  color: rgba(255, 0, 0, 1);
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium;
+
+}
+.dibu .mingxi{
+  position:fixed;
+  left: 294rpx;
+  top: 1160rpx;
+  width: 96rpx;
+  height: 33rpx;
+  color: #666666;
+  font-size: 24rpx;
+  font-family: PingFangSC-Medium;
+
+}
+.tu{
+   position:fixed;
+    left: 400rpx;
+    top: 1160rpx;
+    width: 30rpx;
+    height: 30rpx;
+}
+.zhifu{
+  position:fixed;
+  left: 450rpx;
+  top: 1117rpx;
+  width: 280rpx;
+  height: 80rpx;
+  background-color: #0C71EF;
+  color:#fff;
+ 
+
+}
+

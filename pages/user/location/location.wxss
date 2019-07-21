@@ -1,0 +1,24 @@
+.location-title{
+  font-size:28rpx;
+  line-height:66rpx;
+  color:#333;
+  padding:0 30rpx;
+  background:#f2f2f2;
+}
+.city-wrap{
+  flex-wrap:wrap;
+  background:#fff;
+  padding:20rpx 30rpx 0;
+}
+.city{
+  width:198rpx;
+  height:66rpx;
+  font-size:28rpx;
+  line-height:66rpx;
+  color:#333;
+  text-align:center;
+  background:#f2f2f2;
+  border-radius:8rpx;
+  margin:0 30rpx 20rpx 0;
+
+}

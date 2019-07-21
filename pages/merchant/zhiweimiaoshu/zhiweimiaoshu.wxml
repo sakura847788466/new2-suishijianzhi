@@ -1,0 +1,11 @@
+<view class='container'>
+  <view class="weui-cells weui-cells_after-title" style="height:540rpx;">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" placeholder-class="place-holder" placeholder="请详细描述工作的具体内容，对于人员的要求" style="height: 3.3em" bindinput='limit' value="{{text}}"/>
+                    <view class="weui-textarea-counter" style="position:absolute;left: 621rpx;top: 480rpx;">{{current}}/{{max}}</view>
+                </view>
+            </view>
+        </view>
+</view>
+<button class='btnn baocun' bindtap="push">保存</button>

@@ -1,0 +1,110 @@
+.chongzhi{
+    display: flex;
+    padding:21rpx 40rpx 22rpx 40rpx;
+    line-height:47rpx;
+    background-color: #fff;
+}
+.tietle{
+ 
+  height: 45rpx;
+  color: #333333;
+  font-size: 32rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+}
+.shuru{
+  position:fixed;
+    left: 430rpx;
+    top: 20rpx;
+    height: 45rpx;
+    color: rgba(182, 182, 182, 1);
+    font-size: 32rpx;
+    text-align: left;
+    font-family: PingFangSC-Regular;
+
+}
+.xiushi{
+  flex:1;
+  position:fixed;
+  left: 676rpx;
+  top: 24rpx;
+  height: 45rpx;
+  color: #333333;
+  font-size: 32rpx;
+  text-align: left;
+  font-family: PingFangSC-Regular;
+
+}
+.tishi{
+    position:fixed;
+    left: 40rpx;
+    top: 107rpx;
+    height: 40rpx;
+    color: #B6B6B6;
+    font-size: 28rpx;
+    text-align: left;
+    font-family: PingFangSC-Regular;
+
+  }
+  .zhifu{
+    position:fixed;
+      left: 0rpx;
+      top: 167rpx;
+      width: 750rpx;
+      height: 116rpx;
+      background-color: #fff;
+
+    
+    }
+    .zhifu .weixin{
+      position:fixed;
+      left: 40rpx;
+      top: 195rpx;
+      width: 60rpx;
+      height: 60rpx;
+
+    }
+    .zhifu .one{
+      position:fixed;
+      left: 120rpx;
+      top: 181rpx;
+      width: 66rpx;
+      height: 45rpx;
+      color: #333333;
+      font-size: 32rpx;
+      text-align: left;
+      font-family: PingFangSC-Regular;
+
+    }
+
+     .zhifu .two{
+      position:fixed;
+      left: 120rpx;
+      top: 236rpx;
+      width: 316rpx;
+      height: 33rpx;
+      color: #999999;
+      font-size: 24rpx;
+      text-align: center;
+      font-family: PingFangSC-Regular;
+
+
+    }
+    .zhifu .xuanxiang{
+      position:fixed;
+        left: 671rpx;
+        top: 205rpx;
+        width: 40rpx;
+        height: 40rpx;
+        
+
+
+    }
+    .btnn{
+        position:fixed;
+        left: 75rpx;
+        top: 353rpx;
+        width: 600rpx;
+        height: 88rpx;
+
+    }

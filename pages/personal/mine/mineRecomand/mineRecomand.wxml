@@ -1,0 +1,85 @@
+<!--pages/personal/mine/mineRecomand/mineRecomand.wxml-->
+<view>
+  <image class='ad-recomand' src='/image/ad-recomand.png'></image>
+  <view class='notation'>被您推荐的好友每工作一小时，您将获得0.5元佣金，快去推荐好友吧～</view>
+</view>
+<view class='recomand-code flex-center'>
+  <view class='title'>我的推荐码</view>
+  <view class='note flex-item' bindtap='getRecoCode'>点击获取推荐码</view>
+  <image class='arrow-right' src='/image/mine-job-detail.png' bindtap='getRecoCode'></image>
+</view>
+<view class='recomand-code flex-center'>
+  <view class='title'>我的推荐人</view>
+  <input class='note flex-item' bindblur='setInvitorCode' bindconfirm='setInvitorCode' placeholder-style='color: #999' placeholder='{{ inviterCode }}'></input>
+</view>
+<view class='content'>
+  <view class='gotSomething'>
+    <view class='title'>我的收益</view>
+    <view class='detail flex-center'>
+      <view class='item flex-item'>
+        <view class='row-one flex'>
+          <text class='text-large'>{{ recomandNumber }}</text>
+          <text class='text-small'>人</text>
+        </view>
+        <view class='row-two'>成功推荐</view>
+      </view>
+      <view class='gapper'></view>
+      <view class='item flex-item'>
+        <view class='row-one flex'>
+          <text class='text-large'>{{ user.staffUserStatistics.workTimeLong }}</text>
+          <text class='text-small'>小时</text>
+        </view>
+        <view class='row-two'>累计时长</view>
+      </view>
+      <view class='gapper'></view>
+      <view class='item flex-item'>
+        <view class='row-one flex'>
+          <text class='text-large'>{{ user.staffUserStatistics.workIncome }}</text>
+          <text class='text-small'>元</text>
+        </view>
+        <view class='row-two'>累计获得</view>
+      </view>
+    </view>
+  </view>
+
+  <view class='list-wrapper flex-center'>
+    <view class='col1 flex-item'>
+      <view class='title'>推荐好友</view>
+      <view class='item-col1 flex-center margintop-50' wx:for="{{ inviteList }}" wx:key="*this">
+        <view class='one flex-center'>
+          <image src='item.headerImg'></image>
+          <text>{{ item.userName }}</text>
+        </view>
+        <view class='two flex-item'>
+          <view class='red .has-gap'>当月</view>
+          <view class='grey'>累计</view>
+        </view>
+      </view>
+    </view>
+    <view class='col2 flex-item flex-center'>
+      <view class='flex-item'>
+        <view class='title'>时长</view>
+        <view class='margintop-50' wx:for="{{ inviteList }}" wx:key="*this">
+          <view class='red .has-gap'>{{ item.employeeMonthStatistics.workTimeLong }}h</view>
+          <view class='grey'>{{ item.staffUserStatistics.workTimeLong }}h</view>
+        </view>
+      </view>
+      <view class='flex-item'>
+        <view class='title'>佣金</view>
+        <view class='money margintop-50' wx:for="{{ inviteList }}" wx:key="*this">
+          <view class='red .has-gap'>¥{{ item.employeeMonthStatistics.workIncome }}</view>
+          <view class='grey'>¥{{ item.staffUserStatistics.workIncome }}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='mask flex-center flex-column' wx:if='{{ showQRcode }}'>
+  <view class='model flex-center flex-column'>
+    <image class='QRcodeImg' src='{{ qrCodeUrlSmall }}'></image>
+    <view class='content'>我的推荐码</view>
+    <view class='recommendCode'>{{ inviteCode }}</view>
+    <image class='hideReco' src='/image/cross.png' bindtap='hideReco'></image>
+  </view>
+</view>

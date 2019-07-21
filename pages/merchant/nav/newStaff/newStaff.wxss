@@ -1,0 +1,34 @@
+.title {
+  text-align: center;
+  color: #999;
+  padding: 10rpx 0;
+  background-color: #f2f2f2ff;
+}
+
+.list_item {
+  padding: 20rpx 30rpx;
+  background:#fff;
+  border-bottom:1px solid #f2f2f2;
+}
+
+.list_item .logo {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+.list_item text {
+  margin-right: 30rpx;
+}
+
+.list_item .awwor {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.main_center {
+  position: relative;
+  height: 34rpx;
+  margin-top: 10rpx;
+}

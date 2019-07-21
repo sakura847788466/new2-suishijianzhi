@@ -1,0 +1,59 @@
+/* pages/merchant/shopIntro/shopIntro.wxss */
+.top, .dibu{
+    left: 0rpx;
+    top: 128rpx;
+    width: 670rpx;
+    height: 425rpx;
+    background-color: #FFFFFF;
+    padding:0rpx 40rpx 22rpx 40rpx;
+    
+
+}
+.item{
+    border-bottom:1px solid #F2F2F2;
+    display:flex;
+}
+.item .head{
+  line-height:112rpx;
+  flex:1;
+  font-size:32rpx;
+
+}
+.item .head-tu{
+    width: 112rpx;
+    height: 112rpx;
+    margin-right:44rpx;
+
+}
+.item .jiantou{
+    width: 30rpx;
+    height: 30rpx;
+    margin-top:44rpx;
+
+}
+.right{
+  line-height:112rpx;
+
+}
+.phoneNum{
+  opacity:0.5;
+  font-size:28rpx;
+}
+
+.shop-addr{
+  margin-top:20rpx;
+  background-color: #fff;
+}
+
+.shop-addr{
+
+    width: 670rpx;
+    background-color: #FFFFFF;
+    padding:0rpx 40rpx 22rpx 40rpx;
+
+
+}
+.dibu{
+    margin-top:20rpx;
+  
+  }

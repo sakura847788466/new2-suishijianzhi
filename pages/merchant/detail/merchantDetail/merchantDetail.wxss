@@ -1,0 +1,121 @@
+@import '/common/style/job-item.wxss';
+.container{
+  padding-bottom:20rpx;
+}
+.mer-top{
+  position:relative;
+  background:#fff;
+  margin-bottom:20rpx;
+}
+.mer-edit{
+  position:absolute;
+  top:20rpx;
+  right:20rpx;
+  width:140rpx;
+  height:48rpx;
+  font-size:28rpx;
+  line-height:48rpx;
+  color:#fff;
+  background:linear-gradient(right,#95DCFF,#39BEFF);
+  background:-webkit-linear-gradient(right, #39BEFF , #95DCFF);
+  z-index:100;
+}
+.mer-img{
+  width:100%;
+  height:280rpx;
+}
+.mer-info{
+  position:relative;
+  padding:75rpx 30rpx 20rpx;
+}
+.mer-logo{
+  position:absolute;
+  top:-40rpx;
+  left:30rpx;
+  width:100rpx;
+  height:100rpx;
+  border-radius:100%;
+}
+.mer-name{
+  font-size:28rpx;
+  color:#333;
+}
+
+.title{
+  padding:20rpx 35rpx;
+}
+.title-left-border{
+  width:8rpx;
+  height:40rpx;
+  background:#0C71EF;
+  margin-right:18rpx;
+}
+.title-text{
+  font-size:32rpx;
+  font-weight:bold;
+  color:#000000;
+}
+
+.mer-detail{
+  background:#fff;
+  margin-bottom:20rpx;
+}
+.mer-detail-content{
+  font-size:26rpx;
+  line-height:1.9;
+  color:#999;
+  text-indent: 2em;
+  padding:0 35rpx 20rpx;
+}
+
+.mer-location{
+  background:#fff;
+  padding-bottom:20rpx;
+  margin-bottom:20rpx;
+}
+.mer-location-box{
+  position:relative;
+  width:100%;
+  height:240rpx;
+}
+.mer-location-bg{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+.mer-location-text-wrap{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+  z-index:2; 
+}
+.mer-location-text{
+  width:566rpx;
+  padding:15rpx;
+  background:#fff;
+  box-sizing:border-box;
+  border-radius:6rpx;
+  box-shadow:1rpx 1rpx 15rpx #ccc;
+}
+.mer-location-text>text{
+  font-size:30rpx;
+  line-height:1.3;
+  color:#333;
+}
+.mer-location-icon{
+  width:40rpx;
+  height:40rpx;
+  margin-right:15rpx;
+}
+
+.mer-recruit{
+  background:#fff;
+}
+.null{
+  padding-top:20rpx;
+  padding-bottom:60rpx;
+}

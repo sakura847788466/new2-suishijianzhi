@@ -1,0 +1,97 @@
+.container{
+  padding-bottom:110rpx;
+}
+.item-box{
+  background-color: #fff;
+  padding:0 20rpx;
+}
+.item{
+  border-bottom:1px solid #eee;
+  min-height:100rpx;
+  padding:20rpx 10rpx;
+  box-sizing: border-box;
+}
+.item-text{
+  font-size:32rpx;
+  line-height:60rpx;
+  color:#333333;
+}
+.item-info{
+  font-size:28rpx;
+  line-height:60rpx;
+  color:#666666;
+  padding-left:80rpx;
+}
+
+.zhushi{
+  font-size: 20rpx;
+  line-height: 30rpx;
+  color: #999;
+  padding:20rpx 30rpx;
+}
+.pay-bottom{
+  position:fixed;
+  left: 0px;
+  right:0;
+  bottom:0rpx;
+  padding:0 20rpx 0 30rpx;
+  height: 110rpx;
+  background-color: #fff;
+  z-index:999;
+}
+.pay-price text{
+  font-weight:bold;
+  font-size:24rpx;
+  line-height:50rpx;
+  color:#FF0000;
+}
+.pay-price text.bold{
+  font-size:38rpx;
+}
+.pay-detail{
+  padding-right:10rpx;
+}
+.pay-detail text{
+  font-size: 24rpx;
+  color: #666666;
+}
+.pay-detail image{
+  width: 24rpx;
+  height: 24rpx;
+  margin:0 10rpx;
+}
+.pay-btn{
+  width: 280rpx;
+  height: 80rpx;
+  font-size:34rpx;
+  line-height:80rpx;
+  color:#fff;
+  background-color: #0C71EF;
+  border-radius:6rpx;
+}
+.pay-detail-box{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  padding-bottom:110rpx;
+  z-index:998;
+}
+.pay-detail-mask{
+ background:rgba(0,0,0,0.3);
+}
+.pay-detail-con{
+  background:#fff;
+  padding:0 30rpx;
+}
+.detail-item{
+  height:80rpx;
+  font-size:28rpx;
+  color:#999;
+  border-bottom:1px solid #eee;
+}
+.detail-item-text{
+  min-width:110rpx;
+}
+

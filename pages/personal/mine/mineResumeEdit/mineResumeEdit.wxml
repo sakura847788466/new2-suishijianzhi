@@ -1,0 +1,111 @@
+<!--pages/personal/mine/mineResumeEdit/mineResumeEdit.wxml-->
+<view class='resume-edit-top'>
+  <view class='flex-center bor_bot-f2 resume-edit-flexbox'>
+    <text class='essential-icon'> * </text>
+    <text decode='true'>&nbsp;姓&nbsp;&nbsp;&nbsp;&nbsp;名</text>
+    <input class='flex-right-item' placeholder='{{ user.username }}' placeholder-class='input-name' type='text' bindblur='inputNameBlur' bindconfirm='inputNameBlur'>
+    </input> 
+  </view>
+
+  <view class='flex-center bor_bot-f2 resume-edit-flexbox'>
+    <text class='essential-icon'> * </text>
+    <text decode='true'>&nbsp;性&nbsp;&nbsp;&nbsp;&nbsp;别</text>
+
+    <view class='flex-right-item'>
+      <picker mode="selector" range='{{ sex }}' bind:change="sexChange">
+        <text class='light-text'>{{ user.sex }}</text>
+        <image class='arrow-right' src='/image/mine-job-detail.png'></image>
+      </picker>
+    </view>
+
+  </view>
+
+  <view class='flex-center bor_bot-f2 resume-edit-flexbox'>
+    <text class='essential-icon'> * </text>
+    <text decode='true'>&nbsp;出生年月</text>
+
+    <view class='flex-right-item'>
+      <picker mode="date" bind:change="dateChange" start="1905-01-01" end="2020-01-01">
+        <text class='light-text'>{{ user.birth }}</text>
+        <image class='arrow-right' src='/image/mine-job-detail.png'></image>
+      </picker>
+    </view>
+  </view>
+
+  <view class='flex-center resume-edit-flexbox'>
+    <text class='essential-icon'> * </text>
+    <text decode='true'>&nbsp;近期生活照</text>
+    <view class='flex-right-item'>
+      <image class='logo' src='{{ user.avatar }}' bind:tap="upLoadAvatar"></image>
+    </view>
+    <image class='arrow-right' src='/image/mine-job-detail.png' bind:tap="upLoadAvatar"></image>
+  </view>
+</view>
+
+<view class='resume-edit-mid'>
+  <view class='flex-center bor_bot-f2 resume-edit-flexbox'>
+    <text decode='true'>&nbsp;&nbsp;&nbsp;手机号码</text>
+    <view class='flex-right-item'>
+      <input class='light-text' placeholder='{{ user.phone }}' type="number" bind:focus='inputOnFocus' bindblur='inputOnBlur' confirm-type="done" maxlength='11'></input>
+    </view>
+  </view>
+  <view class='flex-center bor_bot-f2 resume-edit-flexbox'>
+    <text decode='true'>&nbsp;&nbsp;&nbsp;常住地址</text>
+    <view class='flex-right-item'>
+      <text class='light-text'>{{ user.address }}</text>
+    </view>
+    <image class='arrow-right' src='/image/mine-job-detail.png' bind:tap="changeLocation"></image>
+  </view>
+  <view class='flex-center bor_bot-f2 resume-edit-flexbox'>
+    <text decode='true'>&nbsp;&nbsp;&nbsp;学历</text>
+    <view class='flex-right-item'>
+      <picker mode="selector" range='{{ edu }}' bind:change="eduChange">
+        <text class='light-text'>{{ user.education }}</text>
+        <image class='arrow-right' src='/image/mine-job-detail.png'></image>
+      </picker>
+    </view>
+  </view>
+</view>
+
+<view class='mine-willing'>
+  <view class='flex-center'>
+    <view class='mine-willing-title'>工作经验及意向岗位</view>
+    <text class='icon-add mine-add flex-item' bindtap='addResume'>  添加</text>
+  </view>
+
+
+  <view class='mine-willing-wrapper'>
+    <view class='mine-willing-item flex-center' wx:for="{{ resumes }}" wx:key="index">
+      <text class='mine-job'>{{ item.jobName }}</text>
+      <view class='flex-item mine-time flex-center'>
+        <text
+          wx:if="{{ item.year > 0 }}"
+        >{{ item.year }}年</text>
+        <text>{{ item.month }}月</text>      
+      </view>
+
+      <image class='dustbin' data-itemid='{{ index }}' src='/image/dustbin.png' bind:tap="deleteResume"></image>
+    </view>
+  </view>
+
+</view>
+
+<view class='mine-certification'>
+  <view class='flex-center'>
+    <view class='mine-willing-title'>资历、资质及获奖证书</view>
+    <text class='icon-add mine-add flex-item' bind:tap="addWilling">  添加</text>
+  </view>
+
+  <view class='pic'>
+
+    <view class='mine-pic-wrapper' wx:for='{{ annexs }}'>
+      <image class='mine-pic' src='{{ item.url }}' bind:tap="deleteWilling" data-id='{{ index }}'></image>
+      <text>{{ item.name }}</text>
+    </view>
+
+  </view>
+</view>
+
+<view class='mine-save'>
+  <button class='mine-save-btn' bind:tap="save">保存</button>
+</view>

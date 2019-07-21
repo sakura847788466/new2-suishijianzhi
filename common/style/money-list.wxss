@@ -1,0 +1,50 @@
+.top{
+  width:100%;
+  height:190px;
+  background-color:#0C71EF;
+}
+.top-title{
+  font-size:24rpx;
+  line-height:1;
+  text-align:center;
+  color:#fff;
+  padding-top:30rpx;
+}
+.top-money{
+  font-size:100rpx;
+  line-height:1;
+  text-align:center;
+  color:#fff;
+  padding-top:50rpx;
+}
+.top-money text{
+  font-size:28rpx;
+}
+
+.money-detail{
+  background:#fff;
+  padding:0 30rpx 0;
+}
+.jiaoyi{
+  font-size:28rpx;
+  color:#999;
+}
+.money-list{
+  height:70px;
+  border-bottom:1px solid #EBEBEE;
+}
+.list-name{
+  font-size:32rpx;
+  color:#333;
+  padding-bottom:15rpx;
+}
+.list-time{
+  font-size:28rpx;
+  color:#999;
+}
+.list-time text{
+  padding-right:20rpx;
+}
+.money-list .right text{
+  color:#FF6E22;
+}

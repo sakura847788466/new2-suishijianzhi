@@ -1,0 +1,54 @@
+<!--pages/merchant/moomAdd/moomAddr.wxml-->
+<view class='container'>
+   <view class='bg'>
+      <view class='top'>
+          <image class='tu' src='/image/shichang.png'></image>
+          <view class='rili'>
+              <image class='rili-tu'src="/image/rili.png"></image>
+              <text decode='true'>{{ date }}</text>
+              <picker mode="date" fields ="month" end="{{ endDate }}" bindchange="dateChange">
+                <image class='xiala' src="/image/down.png"></image>
+              </picker>
+          </view>
+          <view class='shenhe'>
+              <view class='xiaoyuan'>
+                <text class='shijian'>本月累计时长</text>
+                <text class='jishi'>{{ workTimeLong }}h</text>
+              </view>
+          </view>
+          <button class='btnnn .btn-bgcolor-yellow' bindtap='getReward' wx:if="{{ workTimeLong >= 50 }}"><text>申请奖励</text></button>
+          <button class='btnnn .btn-bgcolor-none' bindtap='cannotGetReward' wx:if="{{ workTimeLong < 50 }}"><text>申请奖励</text></button>
+          <button class='btnnn .btn-bgcolor-yellow' bindtap='cashIsComing' wx:if="{{ cashIsComing }}"><text>奖励在路上…</text></button>
+          <button class='btnnn .btn-bgcolor-none' bindtap='hasGotReward' wx:if="{{ hasGotReward }}"><text>奖励已收入囊中～</text></button>
+
+          
+          
+
+          <view class="shijianchangdu">
+              <span class="shuxian"></span>
+              <text >时长奖励规则 </text>
+              <span class="shuxiantwo"></span>
+          </view>
+          <view class='wenben'>
+              <text>1. 参加任意公益互动，平安都将配捐做公益
+                    2. 参与公益互动顺序尾数为08的用户将获得一份礼物
+                    3. 在1月5日~7日之间，礼物为一份平安百宝定制礼盒
+                    4. 在1月8日~2月9日之间礼物为一份价值百万的保险惊喜
+                    5. 每位用户只有一次获奖机会，需按要求填写相关信息
+                    6.中奖用户未填写相关信息，视为自动放弃奖品
+                    7. 凡参与本次公益活动，即视为默认本规则说明
+                    8. 其他未尽事宜，组织者有权补充和保留最终解释权</text>
+          </view>
+
+  </view>
+  </view>
+  
+  <view class='mask flex-center flex-column' wx:if="{{ cashOutSuccess }}">
+    <view class='model flex-center flex-column'>
+      <view class='title'>申请成功</view>
+      <view class='content'>审核通过后系统会把工作奖励发送到您的钱包，请耐心等候。</view>
+      <view class='confirm' bindtap='comfirmBtn'>我知道了</view>
+    </view>
+  </view>
+
+</view>

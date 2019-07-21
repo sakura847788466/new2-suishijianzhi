@@ -1,0 +1,44 @@
+<view class='container'>
+  <view class="top flex-text-center flex-center flex-column">
+    <image src='/image/img/1.png' class='top-bg'></image>
+    <image src='{{backgroundImg}}' class='top-logo' style='border-radius:100rpx;'></image>
+    <view class='top-info' >
+      <view class='info-name' >{{merList}}</view>
+      <view class='info-phone'>{{phoneNum}}</view>
+      </view>
+  </view>
+  <view class='mine-menu'>
+    <navigator hover-class='none' url='/pages/merchant/money/index/index' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/cashh.png"></image>
+      <view class='flex-item mine-menu-text'>账户</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator>
+    <navigator hover-class='none' url='/pages/merchant/detail/merchantDetail/merchantDetail?id={{id}}' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/mine-resume.png"></image>
+      <view class='flex-item mine-menu-text'>商家简介</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator>
+    <navigator hover-class='none' url='/pages/merchant/system/password/password?type=2' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/suo.png"></image>
+      <view class='flex-item mine-menu-text'>修改密码</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator>
+    <view class='mine-menu-item flex-center' bindtap='toContact'>
+      <image class='mine-icon' src="/image/mine-contact-us.png"></image>
+      <view class='flex-item mine-menu-text'>联系客服</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </view>
+    <!-- <navigator hover-class='none' url='/pages/merchant/merCenter/problem/problem' class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="/image/mine-feedback.png"></image>
+      <view class='flex-item mine-menu-text'>意见反馈</view>
+      <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+    </navigator> -->
+  </view>
+
+  <view class='mine-logout' bindtap='logout'>退出登录</view>
+
+  <view class='mine-find'>找人才就上随时兼 · 职</view>
+</view>
+
+
+<my-bar current-id='{{4}}'></my-bar>

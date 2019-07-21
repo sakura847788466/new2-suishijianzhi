@@ -1,0 +1,57 @@
+<!--pages/personal/mine/minePurse/minePurse.wxml-->
+<view class='mine-purse-top'>
+  <view class='nav-title'>钱包</view>
+  <view class='account-balance-title'>账户余额 (元) </view>
+  <view class='account-balance'>{{ user.accountBalance }}</view>
+</view>
+
+<view class='mine-menu'>
+  <view wx:for="{{ menu }}" wx:for-index="idx" wx:key="idx">
+    <view class='mine-menu-item flex-center'>
+      <image class='mine-icon' src="{{ item.image }}"></image>
+      <view class='flex-item mine-menu-text'>{{ item.title }}</view>
+      <view class="btn-area">
+        <navigator url="{{ url }}" hover-class="navigator-hover">
+          <image class='mine-arrow' src='/image/mine-job-detail.png'></image>
+        </navigator>
+      </view>
+      <view class='mine-gapper' wx:if="{{ idx < menu.length-1 }}"></view>
+    </view>
+  </view>
+</view>
+
+<!-- Revenue share -->
+<view class='mine-revenue-share'>
+  <view class='mine-revenue-share-title'>
+    <text class='vertical-line-blue'></text>
+    <text>收入占比</text>
+  </view>
+</view>
+
+<!-- pie chart -->
+<view class='mine-pie-chart'>
+  <view class='pie-chart-wrapper'>
+    <view class="container">
+      这是环图
+    </view>
+  </view>
+</view>
+
+<view class='mine-revenue-share mine-transaction-detail'>
+  <view class='mine-revenue-share-title mine-transaction-detail-title'>
+    <text class='vertical-line-blue'></text>
+    <text>交易明细</text>
+  </view>
+  <view wx:for="{{ transaction }}" wx:for-index="idx" wx:key="idx" wx:key="*this">
+    <view class='mine-transaction-item flex-center'>
+      <view class='item-left'>
+        <view class='item-left-name'>{{ item.biz_type }}</view>
+        <view class='item-left-time'>
+          <text decode='true'>{{ item.created_time }}</text>
+        </view>
+      </view>
+      <view class='item-right'>{{ item.change_type }}{{ item.amout }}</view>
+    </view>
+    <view class='mine-gapper' wx:if="{{ idx < transaction.length-1 }}"></view>  
+  </view>
+</view>

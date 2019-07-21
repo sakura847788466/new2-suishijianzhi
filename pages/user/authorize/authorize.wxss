@@ -1,0 +1,20 @@
+page{
+  background:#fff;
+}
+.container {
+  position: relative;
+}
+
+.logo image {
+  width: 160px;
+  height: 98px;
+  display: block;
+  margin: 60rpx auto 30rpx;
+}
+.wxLogin {
+  width: 80%;
+  position: relative;
+  left: 10%;
+  margin: 70rpx 0;
+  background-color: #0c71efff;
+}

@@ -1,0 +1,49 @@
+<view class='container'>
+        <view class='con'>
+          <view class='con-item flex-center'>
+              <view class='con-text flex-between'><text>头</text><text>像</text></view>
+              <view class='con-info flex-item' bindtap='upLoadImg'><image class='head-img' src='{{headerImg}}'></image></view>
+              <image class='to-img' src='/image/awwor.png' bindtap='upLoadImg'></image>
+          </view>
+           <view class='con-item flex-center'>
+              <view class='con-text flex-between'><text>联</text><text>系</text><text>人</text></view>
+              <view class='con-info con-info2 flex-item' bindtap='aginRegister'>{{userName}}</view>
+          </view>
+           <view class='con-item flex-center' bindtap='toChangePhone'>
+              <view class='con-text' >手机号码</view>
+              <view class='con-info flex-item'>{{loginPhone}}</view>
+              <image class='to-img' src='/image/awwor.png'></image>
+          </view>
+           <view class='con-item flex-center'>
+              <view class='con-text'>商家名称</view>
+              <view class='con-info con-info2 flex-item' bindtap='aginRegister'>{{companyName}}</view>
+          </view>
+        </view>
+        <view class='con'>
+          <view url='/pages/merchant/setWhere/setWhere' class='con-item flex-center'>
+            <view class='con-text'>商家地址</view>
+            <view class='con-info flex-item'></view>
+            <image class='to-img' src='/image/awwor.png' bindtap='location'></image>
+          </view>
+        </view>
+        
+        <view class='con'>
+          <view class='con-item flex-center'>
+            <view class='con-text'>商家概况</view>
+            <view class='con-info flex-item'>{{ description ? "已填写" : "未填写"}}</view>
+            <image class='to-img' src='/image/awwor.png' bindtap='toSetDescription'></image>
+          </view> 
+          <view class='con-item flex-center'>
+            <view class='con-text'>商家图片</view>
+            <view class='con-info flex-item' bindtap='toSetBgImg'>仅支持.jpg格式，小于2M</view>
+            <image class='to-img' src='/image/awwor.png' bindtap='toSetBgImg'></image>
+          </view>
+          <view class='img-box flex'>
+            <block wx:for='{{backgroundImg}}' wx:key='backgroundImg'>
+              <view class='img-item'>
+                <image src='{{item}}' class='img' data-url='{{item}}' bindtap='prevImg'></image>
+              </view>
+            </block>
+          </view>
+        </view>
+</view>

@@ -1,0 +1,7 @@
+@import '/common/style/money-list.wxss';
+.top{
+  height:140px;
+}
+.money-detail{
+  padding-top:20rpx;
+}

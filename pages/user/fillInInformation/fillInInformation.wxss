@@ -1,0 +1,214 @@
+page {
+  font-size: 28rpx;
+  background-color: #f2f2f2;
+}
+
+.container .items {
+  display: flex;
+  align-items: center;
+  padding: 16rpx 0;
+  background-color: white;
+}
+
+.container .itemBor {
+  border-bottom: 2rpx solid #d8d8d8;
+}
+
+.container .items text {
+  width: 136rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+
+.container .items input {
+  flex: 1;
+  margin-left: 30rpx;
+}
+
+.container .items .awwor {
+  width: 44rpx;
+  height: 44rpx;
+}
+
+.container .pad_bot {
+  padding-bottom: 24rpx;
+}
+
+.items_box {
+  margin-top: 26rpx;
+  padding: 0 26rpx;
+  background-color: white;
+}
+
+.container .items textarea {
+  position: relative;
+  height: 200rpx;
+  padding: 10rpx 0 50rpx 30rpx;
+}
+
+.container .items textarea view {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  color: #d8d8d8;
+}
+
+.container .items .zyjs {
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 30rpx;
+  border: 2rpx dashed #a7a7a7;
+}
+
+.container .items_start {
+  padding: 20rpx 0;
+  align-items: flex-start;
+}
+
+.container .items_start .min_2m {
+  width: auto;
+  color: #999;
+  font-size: 26rpx;
+  display: block;
+  height: 160rpx;
+  line-height: 160rpx;
+}
+
+.container .position {
+  color: #d8d8d8;
+  margin-left: 30rpx;
+}
+
+.container .position image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.container .pos_mar_left {
+  padding-left: 30rpx;
+  color: #999;
+}
+
+.container .items_sb {
+  display: flex;
+  margin: 0 -26rpx;
+  padding: 10rpx 26rpx;
+  justify-content: space-between;
+}
+
+.container .items_sb text {
+  width: auto;
+}
+
+.container .items_sb .add {
+  color: #0c71ef;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container .items_sb .add>text {
+  font-size: 40rpx;
+  padding-right: 6rpx;
+  margin-top: -6rpx;
+}
+
+.container .txt_flex text {
+  flex: 1;
+  font-size: 28rpx;
+}
+
+.container .btn_box {
+  height: 240rpx;
+  display: flex;
+  align-items: center;
+}
+
+.container .add_img {
+  width: 140rpx;
+  height: 140rpx;
+  margin: 0 30rpx 0 150rpx;
+}
+
+.container .data_upload {
+  padding-bottom: 20rpx;
+}
+
+.container .meun {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #0c71ef;
+  background-color: white;
+}
+
+.container .meun view:last-child {
+  height: 100%;
+  color: white;
+  background-color: #0c71ef;
+}
+
+.heads {
+  padding: 20rpx 30rpx;
+}
+
+.arrow_bot {
+  width: 24rpx;
+  height: 17rpx;
+  margin-left: 10rpx;
+}
+
+.sxk {
+  height: 60rpx;
+  padding-left: 68rpx;
+  margin-left: 30rpx;
+  position: relative;
+  border-radius: 6rpx;
+  background-color: #f5f5f5;
+}
+
+.sxk .sx_icon,.sxk .cancel_icon  {
+  width: 40rpx;
+  height: 50rpx;
+  top: 50%;
+  left: 3%;
+  margin-top: -25rpx;
+  position: absolute;
+  z-index: 9999;
+}
+
+.sxk .cancel_icon {
+  left: 90%;
+}
+
+.nearby {
+  padding: 16rpx 20rpx;
+}
+
+.nearby image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 16rpx;
+}
+
+.box_item {
+  margin-left: 20rpx;
+}
+
+.box_item>view {
+  padding: 16rpx 20rpx;
+}
+
+.box_item>view:last-child {
+  border: none;
+}
+.group image{
+  width: 330rpx;
+  height: 330rpx;
+  display: block;
+  margin: 70rpx auto 20rpx;
+}

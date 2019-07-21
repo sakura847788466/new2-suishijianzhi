@@ -1,0 +1,79 @@
+<!--pages/merchant/tuijian/tuijian.wxml-->
+<view class='container'>
+    <view class='top'>
+        <image class='t-tu'src="/image/tuijian.png"></image>
+        <view class='miaoshu'>
+            <text>被您推荐的好友每工作一小时，您将获得0.5元佣金，快去推荐好友吧～</text>
+        </view>
+    </view>
+
+    <view class='tuijianma'>
+        <view class='left'>
+            <text>我的推荐码</text>
+        </view>
+        <view class='right'>
+            <span class="huoqu" bindtap="">点击获取推荐码</span>
+            <image class='jiantou' src='/image/mine-job-detail.png'></image>       
+        </view>
+    </view>
+
+    <view class='dibu'>
+        <view class='mine'>
+            <text class='tone'>我的推荐人</text>
+            <text class='ttwo'>1234568990</text>
+        </view>
+
+        <view class='myShouyi'>
+            <view class='title'>
+              <span style="color:#FFBF41;">我的收益</span>
+            </view>
+             <view class='shouInfo'>
+                  <view class='one'>
+                      <text class='peoNum'>51</text>
+                      <text>人</text>
+                      <text class='xiushi'>成功推荐</text>
+                  </view>
+                  <view class='two'>
+                    <text class='peoNum'>16</text>
+                      <text>小时</text>
+                      <text class='xiushi'>累计时长</text>
+
+                  </view>
+                  <view class='there'>
+                      <text class='peoNum'>12</text>
+                      <text>元</text>
+                      <text class='xiushi'>累计获得</text>
+                  </view>
+             </view>
+            
+        </view>
+        <view class='list flex'>
+            <text>推荐好友</text>
+            <text style='margin-left:286rpx;'>时长</text>
+            <text style='margin-left:109rpx;'>佣金</text>
+        </view>
+        <view class='peopleInfo'>
+            <view class='peoInfo'>
+                <image class='peoTu' src='/image/mine-selfie.png'></image>
+                <text>素素酥</text>
+            </view>
+            <view class='right'>
+                <view  class='shang'>
+                  <text>当月</text>
+                  <text>9h</text>
+                  <text>￥4.5</text>
+                </view>
+                 <view class='xia'>
+                  <text>累计</text>
+                  <text>24h</text>
+                  <text>￥24</text>
+                 </view>
+            </view>
+            
+        </view>
+         
+    </view>
+
+
+</view>
+

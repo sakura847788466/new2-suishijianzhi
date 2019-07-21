@@ -1,0 +1,18 @@
+<!--pages/personal/mine/mineResumeEdit/changeLocation/map/map.wxml-->
+<view class='wrapper'>
+  <view class='search flex-center'>
+    <view class='city'>{{ city }}</view>
+    <view class='gapper'></view>
+    <view class='searching flex-item'>something...</view>
+  </view>
+</view>
+
+<!-- <view class='map-wrapper'>
+  <map
+    id='myMap'
+    longitude="{{longitude}}" 
+    latitude="{{latitude}}"
+    markers='{{ markers }}'
+  >
+  </map>
+</view> -->

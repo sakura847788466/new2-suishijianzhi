@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "兼职详情",
+  "usingComponents": {
+    "my-map": "/components/my-map/my-map"
+  }
+}

@@ -1,0 +1,25 @@
+<!--pages/merchant/moneyCash/moneyCash.wxml-->
+<view class='container'>
+  <view class='top flex-centered'>
+   <view class='left'>
+        <image src='/image/weixin.png'></image>
+        <text>微信红包</text>
+   </view>
+   <view class='right'>
+        <text>亿万用户的选择，更快更安全</text>
+   </view>
+</view>
+
+<view class='item'>
+  <span class='wenzi'>可提现金额<span>{{moneyT}}</span>元</span>
+  <button class='tixian' bindtap='pushCash'>全部提现</button>
+</view>
+
+<view class='moneyNum flex-between'>
+    <span class="zhuti">提现金额</span>
+    <input class='shuru' placeholder-class='placeholder-style' placeholder='请输入提现金额' bindinput="moneyInput"></input>
+    <span class="price">元</span>
+
+</view>
+<button class='dianji' bindtap='getMoney'>申请提现</button>
+</view>

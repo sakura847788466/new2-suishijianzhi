@@ -1,0 +1,67 @@
+@import '/common/style/mine-menu.wxss';
+
+.mine-header{
+  padding-top: 40rpx;
+  box-sizing: border-box;
+  background:#fff;
+}
+
+.logo {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 34rpx;
+  border-radius: 50%;
+  margin-left: 40rpx;
+}
+
+.main_center {
+  position: relative;
+  height: 34rpx;
+  margin-top: 10rpx;
+}
+
+.mine-header-right{
+  width: 140rpx;
+  margin-right: 40rpx;
+  color: #999;
+  font-size: 24rpx;
+}
+
+/* data... */
+.mine-data{
+  height: 180rpx;
+  box-sizing: border-box;
+  padding-top: 42rpx;
+  padding-bottom: 20rpx;
+  margin-bottom:20rpx;
+  position: relative;
+  background:#fff;
+}
+.mine-data-left{
+  border-right: 2rpx solid #F2F2F2
+}
+
+.mine-data-left view, .mine-data-right view{
+  height: 62rpx;
+  line-height: 62rpx;
+  text-align: center
+}
+.mine-data-left-top, .mine-data-right-top{
+  font-size: 44rpx;
+  color: #0C71EF;
+}
+.mine-data-left-bottom, .mine-data-right-bottom{
+  font-size: 24rpx;
+  color: #999
+}
+.mine-reword{
+  width: 50rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 77rpx;
+  top: 35rpx;
+}
+.mine-menu{
+  padding-top:0;
+}
+

@@ -1,0 +1,139 @@
+/* pages/merchant/moneyCash/moneyCash.wxss */
+
+.container{
+left: 0rpx;
+top: 0prx;
+width: 750rpx;
+height: 1334rpx;
+background-color: #F2F2F2;
+
+}
+.top{
+  left: 0rpx;
+top: 128rpx;
+width: 750rpx;
+height: 116rpx;
+background-color: rgba(255, 255, 255, 1);
+
+
+  
+}
+
+.top .left{
+  height:120rpx;
+  position:relative;
+}
+.top .left image{
+  height:60rpx;
+  width:60rpx;
+  position:absolute;
+  top:32rpx;
+  left:32rpx;
+
+}
+.top .left text{
+  margin-left:120rpx;
+  margin-top:40rpx;
+  display:block;
+  font-size:36rpx; 
+  
+
+
+}
+
+.top .right text{
+  left: 394rpx;
+  top: 169rpx;
+  width: 316rpx;
+  height: 33rpx;
+  color: rgba(153, 153, 153, 1);
+  font-size: 24rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  margin:41rpx 40rpx 42rpx ;
+
+}
+
+.item{
+ left: 0rpx;
+top: 268rpx;
+width: 750rpx;
+height: 88rpx;
+margin-top:24rpx;
+background-color: rgba(255, 255, 255, 1);
+border-bottom:1rpx solid #F2F2F2;
+display:flex;
+}
+
+.item .wenzi{
+  display:block;
+  padding-top:22rpx;
+  margin-left:40rpx;
+  font-size: 32rpx;
+
+
+
+}
+
+.item .wenzi span{
+  color:#0C71EF;
+}
+
+
+.item .tixian{
+  width: 160rpx;
+  height: 48rpx;
+  border: 1rpx solid #0C71EF;
+  font-size:24rpx;
+  line-height:48rpx;
+  justify-content: space-between;
+  margin-top:20rpx;  
+  margin-right:40rpx;
+  color:#0C71EF;
+}
+
+
+.moneyNum{
+    left: 0rpx;
+    top: 358rpx;
+    width: 750rpx;
+    height: 88rpx;
+    background-color: #FFFFFF;
+
+
+}
+.moneyNum .zhuti{
+      margin-left: 40rpx;
+      display:inline-block;
+      padding-top:22rpx;
+
+}
+
+.moneyNum .shuru{
+    /* margin-top:15rpx; */
+    position:fixed;
+    left: 430rpx;
+    top: 248rpx;
+    height: 45rpx;
+    color: rgba(182, 182, 182, 1);
+    font-size: 32rpx;
+    text-align: left;
+    font-family: PingFangSC-Regular;
+
+}
+
+.moneyNum .price{
+  margin-top:27rpx;
+  margin-right:45rpx;
+
+}
+
+.dianji{
+    top: 400rpx;
+    width: 600rpx;
+    height: 88rpx;
+    background-color: #0C71EF;
+    color:#fff;
+
+  
+  }

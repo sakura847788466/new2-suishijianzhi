@@ -1,0 +1,19 @@
+<view class="container">
+  <view class='title' wx:if='{{newStaffs != 0}}'>本月新增{{newStaffs}}个员工哦～</view>
+  <view class='list' wx:for="{{workerList}}" wx:key='workerList'>
+    <view class='list_item flex-center' data-id='{{item.staffUserStatistics.id}}' bindtap='toStaffDetail'>
+      <image class='logo' mode='aspectFill' src='{{item.headerImg ? item.headerImg : "/image/personal.png"}}' />
+      <view class='flex-item'>
+        <view class='flex-center'>
+          <text class='color9'>{{item.userName}}</text>
+          <span class='color9'>{{item.gender}}</span>
+        </view>
+        <view class='main_center'>
+          <stars id="stars" key="{{item.staffUserStatistics.rate}}" eventOpening="false">
+          </stars>
+        </view>
+      </view>
+      <image class='awwor' src='/image/awwor.png' />
+    </view>
+  </view>
+</view>

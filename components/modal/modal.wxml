@@ -1,0 +1,14 @@
+<view hidden='{{!isShow}}'>
+  <view class="modal">
+    <view class='modal-content'>
+      <view class='modal-top'>
+        <view class='header'>{{modalTitle}}</view>
+      </view>
+      <view class='modal-body'>{{modalMsg}}</view>
+      <view class='modal-footer'>
+        <text class='cancle' wx:if="{{cancle}}" catchtap='_cancelEvent'>{{cancle}}</text>
+        <text class='sure' wx:if="{{sure}}" catchtap='_confirmEvent'>{{sure}}</text>
+      </view>
+    </view>
+  </view>
+</view>

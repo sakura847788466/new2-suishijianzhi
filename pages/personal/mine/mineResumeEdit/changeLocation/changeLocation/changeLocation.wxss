@@ -1,0 +1,47 @@
+/* pages/personal/mine/mineResumeEdit/changeLocation/changeLocation.wxss */
+.wrapper{
+  background-color: white;
+
+}
+.region-wrapper{
+  padding: 20rpx 40rpx;
+}
+image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.region-text{
+  margin-right: 40rpx;
+}
+.region{
+  flex: 1
+}
+.select{
+  flex: 1;
+  margin-left: 10rpx;
+  color: #d8d8d8
+}
+.gapper{
+  border-top: 1px solid #d8d8d8;
+  margin: 0 38rpx;
+}
+.input-holder{
+  color: #d8d8d8
+}
+
+.notation{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #999;
+  text-align: center
+}
+
+.save{
+  margin: 60rpx 75rpx;
+  background-color: #0C71EF;
+  padding: 20rpx 0;
+  font-size: 36rpx;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}

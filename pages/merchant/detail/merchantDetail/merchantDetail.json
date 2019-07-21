@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商家简介",
+  "usingComponents": {
+    "my-map": "/components/my-map/my-map"
+  }
+}

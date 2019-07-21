@@ -1,0 +1,58 @@
+<view class="container">
+  <!-- <view class='head_sxk flex-center'>
+    <navigator hover-class='none' url='/pages/user/location/location' class='flex-center'>
+      <view class='location'>广州</view>
+      <image class='awwor' mode='aspectFill' src="/image/awwor_bot.png" />
+    </navigator>
+    <navigator hover-class='none' url='/pages/user/search/search' class='input-box'>
+      <image src='/image/sx.png' />
+      <view class='input inpus'>搜索你想要的兼职吧</view>
+    </navigator>
+  </view> -->
+  <header-search title=''></header-search>
+  <banner role='{{role}}'></banner>
+  <notice role='{{role}}'></notice>
+  
+  <view class='sele_item flex-center'>
+    <navigator hover-class='none' url='/pages/merchant/nav/enterMerchant/enterMerchant' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon3.png" />
+      <text>入驻商家</text>
+    </navigator>
+    <navigator hover-class='none' url='/pages/merchant/nav/newStaff/newStaff' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon7.png" />
+      <text>最新员工</text>
+    </navigator>
+    <navigator hover-class='none' url='/pages/user/job/all/all' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon2.png" />
+      <text>全部职位</text>
+    </navigator>
+    <navigator hover-class='none' url='/pages/user/richText/richText?type=2' class='sele_i'>
+      <image mode='aspectFit' src="/image/nav_icon/icon6.png" />
+      <text>专业地推</text>
+    </navigator>
+  </view>
+  <view class='recommend'>
+    <view class='recommend-header flex-between'>
+      <view class='title'>优秀商家</view>
+    </view>
+    <view class='firm-wrap'>
+      <block wx:for='{{merList}}' wx:key='merList'>
+        <view class='firm flex-center' data-id='{{item.id}}' bindtap='toMerchantDetail'>
+          <image class='firm-logo' src='{{item.headerImg}}'></image>
+          <view class='firm-info flex-item'>
+            <view class='firm-name'>{{item.employerUserInfo.companyName}}</view>
+            <view class='firm-detail'>
+              <text>发布兼职：10次</text>
+              <text>招聘人数：100人</text>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='null' wx:if='{{merList.length === 0}}'>
+    <image src='/image/img/null.png' class='null-icon'></image>
+    <text>没有相关数据~</text>
+  </view>
+</view>
+<my-bar current-id='0'></my-bar>

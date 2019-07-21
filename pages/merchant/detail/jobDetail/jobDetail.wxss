@@ -1,0 +1,167 @@
+@import '/common/style/job-item.wxss';
+.container{
+  padding-bottom:101rpx;
+}
+.job-top{
+  padding-bottom:20rpx;
+}
+.job-name,.job-pay{
+  font-size:34rpx;
+  font-weight:bold;
+}
+.detail-wrap{
+  margin-bottom:20rpx;
+  padding:20rpx;
+  background:#fff;
+}
+.detail-title{
+  font-size:34rpx;
+  font-weight:bold;
+}
+.detail-content{
+  position:relative;
+  font-size:28rpx;
+  line-height:1.8;
+  color:#666;
+  padding:0 20rpx;
+  overflow:hidden;
+}
+.detail-con-title{
+  padding-top:20rpx;
+}
+.detail-tips{
+  font-size:22rpx;
+  color:red;
+  padding:20rpx 0;
+}
+.unfold{
+  height:80rpx;
+  font-size:30rpx;
+}
+.unfold image{
+  width:24rpx;
+  height:24rpx;
+  margin-left:10rpx;
+}
+.time,.wran{
+  font-size:26rpx;
+  color:#666;
+  padding-top:20rpx;
+}
+.time-icon{
+  width:30rpx;
+  height:30rpx;
+  margin-right:15rpx;
+}
+.wran{
+  color:#ff0000;
+  padding-bottom:20rpx;
+}
+.wran-icon{
+  width:34rpx;
+  height:34rpx;
+  margin-right:15rpx;
+}
+.detail-nopadding{
+  padding-left:0;
+  padding-right:0;
+  padding-bottom:20rpx;
+}
+.detail-nopadding .detail-title{
+  padding:0 20rpx 20rpx;
+}
+.detial-t2{
+  font-size:24rpx;
+  color:#999;
+  font-weight:normal;
+}
+.mer-location{
+  background:#fff;
+  padding-bottom:20rpx;
+  margin-bottom:20rpx;
+}
+
+.mer-info{
+  padding:20rpx 0;
+}
+.mer-info image{
+  width:90rpx;
+  height:90rpx;
+  border-radius:100%;
+}
+.mer-info-content{
+  font-size:28rpx;
+  color:#333;
+  padding-left:20rpx;
+}
+.mer-info-content .name{
+  padding-bottom:10rpx;
+}
+.mer-info button{
+  font-size:28rpx;
+  line-height:1;
+  color:#0C71EF;
+  background:#fff;
+  border:1px solid #0C71EF;
+  padding:10rpx 20rpx;
+  border-radius:30rpx;
+}
+.no-more{
+  padding:10rpx 0 30rpx;
+}
+.button-wrap{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  height:100rpx;
+  background:#fff;
+  border-top:1px solid #f2f2f2;
+  z-index:999;
+}
+.btn-share,.btn-collect{
+  width:25%;
+  height:100%;
+}
+.btn-share text,.btn-collect text{
+  font-size:20rpx;
+  line-height:1;
+  padding-top:10rpx;
+}
+.btn-share text{
+  color:#0C71EF;
+}
+.btn-collect text{
+  color:#999;
+}
+.share-img{
+  width:40rpx;
+  height:40rpx;
+  margin-top:5rpx;
+}
+.collect-img{
+  width:50rpx;
+  height:50rpx;
+}
+.btn-grab{
+  width:50%;
+  height:100%;
+  font-size:32rpx;
+  line-height:100rpx;
+  color:#fff;
+  background:#0C71EF;
+  border-radius:0;
+}
+.btn-gray,.btn-blue{
+  font-size:32rpx;
+  line-height:100rpx;
+  border-radius:0;
+}
+.btn-gray{
+  color:#ACACAC;
+  background:#ddd;
+}
+.btn-blue{
+  background:#0C71EF;
+  color:#fff;
+}

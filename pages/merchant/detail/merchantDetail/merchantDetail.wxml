@@ -1,0 +1,67 @@
+<view class='container'>
+  <view class='mer-top'>
+    <button class='mer-edit' bindtap='toEdit' wx:if='{{currentUserId === detail.id}}'>编辑</button>
+    <view class='mer-img'>
+      <swiper indicator-dots indicator-active-color='#fff'>
+        <block wx:for='{{detail.backgroundImg}}' wx:key='backgroundImg'>
+          <swiper-item>
+            <image src='{{item}}' class='img' mode='aspectFit'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+      
+    </view>
+    <view class='mer-info'>
+      <image src='{{detail.headerImg}}' class='mer-logo'></image>
+      <view class='mer-name'>{{detail.employerUserInfo.companyName}}</view>
+    </view>
+  </view>
+
+  <view class='mer-detail'>
+    <view class='title flex-center'>
+      <view class='title-left-border'></view>
+      <view class='title-text'>商家概况</view>
+    </view>
+    <view class='mer-detail-content'>
+        {{detail.employerUserInfo.description}}
+    </view>
+  </view>
+
+  <view class='mer-location'>
+    <view class='title flex-center'>
+      <view class='title-left-border'></view>
+      <view class='title-text'>地理位置</view>
+    </view>
+    <my-map longitude='{{detail.longitude}}' latitude='{{detail.latitude}}' province='{{detail.province}}' city='{{detail.city}}' area='{{detail.area}}' address='{{detail.address}}'></my-map>
+  </view>
+
+  <view class='mer-recruit'>
+    <view class='title flex-center'>
+      <view class='title-left-border'></view>
+      <view class='title-text'>商家在招职位</view>
+    </view>
+    <view class='job-wrap'>
+      <block wx:for='{{jobList}}' wx:key='jobList'>
+        <view class='job' data-id='{{item.id}}' bindtap='toJobDetail'>
+          <view class='job-top flex-between flex-center'>
+            <view class='job-name'>{{item.title}}</view>
+            <view class='job-pay'>¥ {{item.hourlyPay}}／h</view>
+          </view>
+          <view class='job-site flex-center'>
+            <image class='job-site-img' src='/image/job-location.png'></image>
+            <view class='job-location flex-item line1'>{{item.address}}</view>
+            <view class='job-distance'>{{item.distance}}km</view>
+          </view>
+          <view class='job-times flex-center'>
+            <image class='job-time-img' src='/image/job-time.png'></image>
+            <view class='job-time'>{{item.workStartTime}}～{{item.workEndTime}}</view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class='null' wx:if='{{jobList.length === 0}}'>
+    <image src='/image/img/null.png' class='null-icon'></image>
+    <text>没有相关数据~</text>
+  </view>
+</view>

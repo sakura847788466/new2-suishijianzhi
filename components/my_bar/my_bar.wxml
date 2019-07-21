@@ -1,0 +1,37 @@
+<view class='my-bar flex'>
+  <view class='bar flex-text-center flex-column' data-id='{{0}}' bindtap='handleClick'>
+    <view class='bar-img'>
+      <image src='/image/bar_icon/home_on.png' wx:if='{{currentId === 0}}'></image>
+      <image src='/image/bar_icon/home.png' wx:else></image>
+    </view>
+    <view class='bar-text {{currentId === 0 ? "common-color" : ""}}'>首页</view>
+  </view>
+  <view class='bar flex-text-center flex-column' data-id='{{1}}' bindtap='handleClick'>
+    <view class='bar-img'>
+      <image src='/image/bar_icon/recruit_on.png' wx:if='{{currentId === 1}}'></image>
+      <image src='/image/bar_icon/recruit.png' wx:else></image>
+    </view>
+    <view class='bar-text {{currentId === 1 ? "common-color" : ""}}'>招聘</view>
+  </view>
+  <view class='bar bar_publish flex-text-center flex-column' data-id='{{2}}' bindtap='handleClick'>
+    <view class='bar-img'>
+      <image src='/image/bar_icon/publish_on.png' wx:if='{{currentId === 2}}'></image>
+      <image src='/image/bar_icon/publish.png' wx:else></image>
+    </view>
+    <view class='bar-text {{currentId === 2 ? "common-color" : ""}}'>发布</view>
+  </view>
+  <view class='bar flex-text-center flex-column' data-id='{{3}}' bindtap='handleClick'>
+    <view class='bar-img'>
+      <image src='/image/bar_icon/msg_on.png' wx:if='{{currentId === 3}}'></image>
+      <image src='/image/bar_icon/msg.png' wx:else></image>
+    </view>
+    <view class='bar-text {{currentId === 3 ? "common-color" : ""}}'>消息</view>
+  </view>
+  <view class='bar flex-text-center flex-column' data-id='{{4}}' bindtap='handleClick'>
+    <view class='bar-img'>
+      <image src='/image/bar_icon/me_on.png' wx:if='{{currentId === 4}}'></image>
+      <image src='/image/bar_icon/me.png' wx:else></image>
+    </view>
+    <view class='bar-text {{currentId === 4 ? "common-color" : ""}}'>我的</view>
+  </view>
+</view>

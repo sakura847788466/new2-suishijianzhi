@@ -1,0 +1,116 @@
+<view class='container'>
+  <form bindsubmit='toCheck'>
+    <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text'>兼职标题</view>
+        <input name='title' placeholder='请输入兼职标题' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>工作岗位</view>
+        <input hidden name='jobTypeId' value='{{jobTypeId}}'></input>
+        <picker class='con-picker flex-item' range='{{jobTypes}}' range-key='name' bindchange='setJobType'>
+          <view class=' flex-center'>
+            <view class='con-input flex-item'><text wx:if='{{jobTypeName}}'>{{jobTypeName}}</text> <text wx:else class='my-color'>请选择类型</text></view>
+            <image class='to-img' src='/image/mine-job-detail.png'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>招聘人数</view>
+        <input type='number' name='planWorkerNum' placeholder='请输入招聘人数' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>兼职薪资</view>
+        <input type='digit' name='hourlyPay' placeholder='请输入薪资' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+        <view class='con-text-right'>元/小时</view>
+      </view>
+    </view>
+    <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text'>工作地址</view>
+        <input hidden name='province' value='{{province}}'></input>
+        <input hidden name='city' value='{{city}}'></input>
+        <input hidden name='area' value='{{area}}'></input>
+        <input hidden name='longitude' value='{{longitude}}'></input>
+        <input hidden name='latitude' value='{{latitude}}'></input>
+        <view class='con-placeholder flex-center flex-item' style='{{ province ? "padding-left:15rpx;color:#999" : ""}}' bindtap='chooseLoaction'>
+          <block wx:if='{{province}}'>{{province}}{{city}}{{area}}</block>
+          <block wx:else>
+            <image src='/image/location.png' class='position-img'></image> <text class='flex-item'>点击选择</text>  <image class='to-img' src='/image/mine-job-detail.png'></image> 
+          </block>
+        </view>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>详细地址</view>
+        <input name='address' value='{{address}}' placeholder='详细地址，例如00号楼00层00室' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+      </view>
+    </view>
+    <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text'>开始日期</view>
+        <picker class='con-picker flex-item' mode='date' start='{{nowDate}}' bindchange='setWorkStartDate'>
+          <view class=' flex-center'>
+            <input class='con-input flex-item' disabled placeholder-class='con-placeholder' placeholder='请选择日期' name='workStartDate' value='{{workStartDate}}'></input>
+            <image class='to-img' src='/image/mine-job-detail.png'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>结束日期</view>
+        <picker class='con-picker flex-item' mode='date' start='{{workStartDate}}' bindchange='setWorkEndDate'>
+          <view class=' flex-center'>
+            <input class='con-input flex-item' disabled placeholder-class='con-placeholder' placeholder='请选择日期' name='workEndDate' value='{{workEndDate}}'></input>
+            <image class='to-img' src='/image/mine-job-detail.png'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>开始时间</view>
+        <picker class='con-picker flex-item' mode='time' bindchange='setWorkStartTime'>
+          <view class=' flex-center'>
+            <input class='con-input flex-item' disabled placeholder-class='con-placeholder' placeholder='请选择开始工作时间' name='workStartTime' value='{{workStartTime}}'></input>
+            <image class='to-img' src='/image/mine-job-detail.png'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>结束时间</view>
+        <picker class='con-picker flex-item' mode='time' start='{{workStartTime}}' bindchange='setWorkEndTime'>
+          <view class=' flex-center'>
+            <input class='con-input flex-item' disabled placeholder-class='con-placeholder' placeholder='请选择结束工作时间' name='workEndTime' value='{{workEndTime}}'></input>
+            <image class='to-img' src='/image/mine-job-detail.png'></image>
+          </view>
+        </picker>
+      </view>
+      <view class='tip2 flex'>
+        <text>提示：</text>
+        <text class='flex-item'>法律规定，灵活就业人员每日工作不得超4小时，请根据实际需要填写。</text>
+      </view>
+    </view>
+    <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text'>兼职描述</view>
+        <input name='des' placeholder='请输入兼职描述' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+        <image class='to-img' src='/image/mine-job-detail.png'></image> 
+      </view>
+    </view>
+    <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>联</text><text>系</text><text>人</text></view>
+        <input name='contactName' placeholder='请输入联系人称呼，例如林小姐' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text'>联系电话</view>
+        <input type='number' maxlength='11' name='contactPhone' placeholder='请输入联系电话' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>备</text><text>注</text></view>
+        <input type='number' name='readyTime' placeholder='提前到岗' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+        <view class='con-text-right'>分钟</view> 
+      </view>
+    </view>
+    <input hidden name='requireWorkYears' value='{{1}}'></input>
+    <input hidden name='requireEducation' value='requireEducation'></input>
+    <button class='btn' form-type='submit'>提交审核</button>
+  </form>
+</view>

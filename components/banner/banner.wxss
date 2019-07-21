@@ -1,0 +1,9 @@
+@import '/app.wxss';
+.banner{
+  padding:20rpx;
+  background:#fff;
+}
+.banner swiper{
+  width:100%;
+  height:270rpx;
+}

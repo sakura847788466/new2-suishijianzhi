@@ -1,0 +1,7 @@
+<!--pages/merchant/depostsit/depostsit.wxml-->
+<view class='container'>
+    <image class='tu' src='/image/zhifushibai.png'></image>
+    <text class='title'>支付失败</text>
+    <button class='left '>订单详情</button>
+    <button class='right '>重新支付</button>
+</view>

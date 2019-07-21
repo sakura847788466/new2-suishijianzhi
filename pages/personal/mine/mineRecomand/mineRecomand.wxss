@@ -1,0 +1,163 @@
+/* pages/personal/mine/mineRecomand/mineRecomand.wxss */
+page{
+  font-size: 28rpx;
+}
+.ad-recomand{
+  width: 100%;
+  height: 300rpx;
+}
+.notation{
+  padding: 25rpx 20rpx 20rpx 40rpx;
+  background-color: white;
+  margin-top: -5rpx;
+}
+.recomand-code{
+  padding: 18rpx 40rpx;
+  margin-top: 20rpx;
+  background-color: white;
+}
+.recomand-code .title{
+  font-size: 32rpx;
+}
+.recomand-code .note{
+  margin-right: 20rpx;
+  font-size: 28rpx;
+  color: #999999;
+  text-align: right;
+}
+.arrow-right{
+  height: 40rpx;
+  width: 40rpx;
+}
+.content{
+  background-color: white;
+  padding: 40rpx;
+  margin-top: 20rpx;
+}
+.content .my-recomander{
+  color: #999999;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+.content .my-recomander .title{
+  margin: 5rpx 50rpx 5rpx 20rpx;
+}
+.gotSomething{
+  margin: 40rpx 0;
+  box-shadow: 0 2rpx 4rpx 0 rgba(0, 0, 0, 0.4);
+  border-radius: 10rpx;
+  padding-bottom: 34rpx;
+}
+.gotSomething .title{
+  background-color: #E53C31;
+  font-size: 32rpx;
+  color: #FFBF41;
+  padding: 15rpx 0 15rpx 20rpx;
+  border-radius: 10rpx 10rpx 0 0
+}
+
+.gotSomething .detail{
+  align-items: center;
+  padding: 20rpx 83rpx;
+}
+
+.gotSomething .detail .item .row-one{
+  height: 90rpx;
+  align-items: flex-end;
+}
+.text-large{
+  font-size: 64rpx;
+}
+.text-small{
+  position: relative;
+  top: -10rpx;
+  left: 8rpx;
+}
+.gotSomething .detail .item .row-two{
+  font-size: 20rpx;
+  color: #999;
+  text-align: center;
+}
+.gapper{
+  height: 50rpx;
+  border-left: 1rpx solid #D7D7D7;
+  margin-left: 38rpx;
+  margin-right: 40rpx;
+}
+
+.red{
+  color: #E53C31;
+}
+.grey{
+  color: #999999;
+}
+
+
+.item-col1 .one{
+  align-items: center;
+  margin-right: 70rpx;
+}
+.item-col1 .one image{
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+}
+
+.item-col1 .two{
+  text-align: left
+}
+.list-wrapper .title{
+  font-size: 32rpx;
+}
+.list-wrapper .col2{
+  text-align: center
+}
+.has-gap{
+  border-bottom: 1rpx solid #F2F2F2;
+}
+.money{
+  margin-right: 60rpx;
+  text-align: right
+}
+.margintop-50{
+  margin-top: 50rpx;
+}
+
+.mask{
+  z-index:10;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+  bottom: 0rpx;
+  right: 0rpx;
+  background: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+  align-items: center;
+  padding: 0 105rpx;
+  font-size: 32rpx;
+}
+.model{
+  position: relative;
+  height: 500rpx;
+  width: 500rpx;
+  background-color: #fff;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15rpx;
+  align-items: center;
+}
+.QRcodeImg{
+  width: 250rpx;
+  height: 250rpx;
+}
+.recommendCode{
+  background-color: #F2F2F2;
+  padding: 8rpx 58rpx;
+}
+.hideReco{
+  position: absolute;
+  width: 45rpx;
+  height: 45rpx;
+  right: 32rpx;
+  top: 32rpx;
+}

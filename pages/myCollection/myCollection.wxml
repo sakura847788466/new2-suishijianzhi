@@ -1,0 +1,21 @@
+<!--pages/myCollection/myCollection.wxml-->
+<view class='container'>
+    <view class='bg'>
+          <view class="item flex">
+              <view class='left'>
+                <view><text>广发银行充场</text></view>
+                <view>
+                    <image class='local'></image>
+                    <text>广州国际采购中心</text>
+                </view>
+                <view>
+                    <image class='time' src=''></image>
+                    <text>03.15～03.16</text>
+                </view>
+                
+
+              </view>
+              <view class='right'></view>
+          </view>
+    </view>
+</view>

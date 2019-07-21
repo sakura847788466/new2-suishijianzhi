@@ -1,0 +1,113 @@
+/* pages/personal/mine/minePurse/minePurse.wxss */
+.mine-purse-top{
+  background:#0C71EF;
+  color: white;
+  padding: 50rpx 40rpx 40rpx 40rpx;
+}
+.nav-title{
+  font-size: 36rpx;
+  text-align: center;
+}
+.account-balance-title{
+  margin-top: 40rpx
+}
+.account-balance{
+  font-size: 100rpx;
+  margin-top: 20rpx;
+}
+
+/* list-style */
+.mine-menu{
+  background-color: white
+}
+.mine-menu-item{
+  padding: 26rpx 41rpx 26rpx 43rpx;
+}
+.mine-menu-text{
+  margin-left: 27rpx;
+  font-size: 32rpx;
+}
+.mine-menu-item .btn-area navigator{
+  padding: 0;
+  margin-top: 4rpx;
+}
+.mine-icon{
+  width: 46rpx;
+  height: 46rpx;
+}
+.mine-arrow{
+  width: 40rpx;
+  height: 40rpx;
+}
+.mine-gapper{
+  border-top: 1rpx solid #D8D8D8
+}
+
+/* mine-revenue-share */
+.mine-revenue-share{
+  margin-top: 20rpx;
+  background-color: white;
+}
+.mine-revenue-share-title{
+  padding: 20rpx 40rpx;
+  font-size: 32rpx;
+  color: #000000;
+}
+.vertical-line-blue{
+  line-height: 40rpx;
+  border-left: 8rpx solid #0C71EF;
+  margin-right: 23rpx;
+}
+
+/* pie chart */
+.mine-pie-chart{
+  padding: 0 40rpx 20rpx;
+  background-color: white
+}
+.pie-chart-wrapper{
+  background-color: #FCFCFC;
+  position: relative;
+  height: 320rpx;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.mine-transaction-item{
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+}
+.item-left{
+  flex: 1;
+}
+.item-left-name{
+  font-size: 32rpx;
+}
+.item-left-time{
+  color: #999999;
+  margin: 16rpx 0;
+  font-size: 28rpx;
+}
+.item-right{
+  flex: 1;
+  text-align: right;
+  color: #FF5A00;
+}
+.mine-gapper{
+  border-top: 1rpx solid #F2F2F2;
+  margin: 0 40rpx 20rpx 40rpx;
+}

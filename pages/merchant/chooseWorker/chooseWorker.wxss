@@ -1,0 +1,82 @@
+/* pages/merchant/chooseWorker/chooseWorker.wxss */
+
+.item{
+  height: 174rpx;
+  margin-top:20rpx;
+  background-color: #fff;
+
+}
+.item .left{
+  background:#fff;
+}
+.item .zhongjian{
+  flex:1;
+  display:flex;
+  flex-direction: column;
+  position:relative;
+}
+.item .right{
+  flex:1;
+  display: flex;
+  align-items: center
+}
+.item .tu{
+  margin-top:17rpx;
+  margin-left:17rpx;
+  width: 94rpx;
+  height: 94rpx;
+
+
+}
+.item .zhongjian .name{
+   
+    width: 84rpx;
+    height: 40rpx;
+    color: rgba(51, 51, 51, 1);
+    font-size: 28rpx;
+    font-family: PingFangSC-Regular;
+
+}
+.item .zhongjian .name{
+   margin-left:17rpx;
+   margin-top:20rpx;
+}
+.item .zhongjian .info{
+  margin-top:12rpx;
+  margin-bottom:30rpx;
+
+}
+.item .zhongjian .info text{
+  margin-left:17rpx;
+  font-size:24rpx;
+  color:#999999;
+}
+
+
+.luyong{
+   
+  width: 160rpx;
+  height: 60rpx;
+  background-color: #0C71EF;
+  line-height:60rpx;
+  color:#fff;
+  border-radius:100rpx;
+}
+
+.luyongle{
+  
+  width: 160rpx;
+  height: 60rpx;
+  background-color: #F2F2F2;
+  line-height:60rpx;
+  color:#999999;
+  border-radius:100rpx;
+}
+
+.item .zhongjian .main_center{
+  position:absolute;
+  top:148rpx;
+  left:10rpx;
+  height:16rpx;
+ 
+}

@@ -1,0 +1,28 @@
+<view class='container'>
+  <view class='head_sxk flex-center'>
+    <view class='input-box'>
+      <image src='/image/sx.png' />
+      <input placeholder='搜索你想要的兼职吧' value='{{title}}' placeholder-class='inpus' bindinput='setTitle'></input>
+    </view>
+    <view class='search-btn' bindtap='toTrue'>确定</view>
+  </view>
+  <view class='search-wrap'>
+    <view class='search-title flex-between'>
+      <text>热门搜索</text>
+    </view>
+    <view class='search-items flex'>
+      <block wx:for='{{jobType}}' wx:key='jobType'>
+        <view data-id='{{item.id}}' bindtap='chooseJobType'>{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+  <!-- <view class='search-wrap'>
+    <view class='search-title flex-between flex-center'>
+      <text>搜索历史</text>
+      <image src='/image/del.png' class='del-icon'></image>
+    </view>
+    <view class='search-items flex'>
+      <view>家教</view><view>家教</view><view>家教家教家教家教</view><view>家教</view><view>家教</view><view>家教</view><view>家教</view><view>家教</view><view>家教</view><view>家教</view><view>家教</view>
+    </view>
+  </view> -->
+</view>

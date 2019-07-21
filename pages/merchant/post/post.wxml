@@ -1,0 +1,95 @@
+<!-- pages/merchant/post/post.wxml -->
+<view class='container'>
+   <view class='top'>
+        <view class='item'>
+          <text> 兼职标题</text>
+          <input class='shuru' placeholder='请输入兼职标题' bindinput='shuru'></input>
+          <view class='right'></view>
+        </view>
+        <view class='item' >
+           <picker class="weui-btn" mode="selector"  range="{{worker}}" value="{{workerIndex}}"  range-key='name' bindchange="bindWorkChange" style='margin-top:0rpx;height:84rpx;width:100%;'>
+            <text> 工作岗位</text>
+             <view class='shuru' style='margin-left:90rpx;' >{{worker[workerIndex].name}}</view>
+            </picker>
+          <view class='right'>
+               <image class='jiantou' src='/image/awwor.png'></image>
+          </view>
+        </view>
+        <view class='item ' >
+          <text>招聘人数</text>
+          <input class='shuru' placeholder='请输入招聘人数' bindinput='shuru'></input>
+          <view class='right'></view>
+        </view>
+        <view class='item' >
+          <text> 兼职薪资</text>
+          <input class='shuru' placeholder='请输入薪资' bindinput='xinzi'></input>
+          <view class='right'>
+               <text class='num'>元/小时</text>
+          </view>
+        </view>
+         <view class='item' >
+            <text> 工作地点</text>
+            <input class='shuru' placeholder='广州琶洲国际采购中心' bindinput='addr'></input>
+            <view class='right'>
+                <image class='jiantou' src='/image/awwor.png' style='margin-left:180rpx;'></image>
+            </view>
+       </view>
+    </view>
+ 
+        <view class='item' style='margin-top:20rpx;'>
+            <picker class="weui-btn" mode="date" bindchange="bindDateChange1" style='margin-top:0rpx;width:100%;'>
+                 <text> 开始日期</text>
+                <view class='shuru'style="margin-left:100rpx;">{{date}}</view>
+            </picker>
+            <view class='right'>
+                <image class='jiantou' src='/image/awwor.png'></image>
+            </view>
+        </view>
+          <view class='item' >
+             <picker class="weui-btn" mode="date" value="{{dataone}}" bindchange="bindDateChange2" style='margin-top:0rpx;width:100%;'>
+                 <text> 结束日期</text>
+                 <view class='shuru' style="margin-left:100rpx;">{{datetwo}}</view>
+
+              </picker>
+              <view class='right'>
+                  <image class='jiantou' src='/image/awwor.png'></image>
+              </view>
+          </view>
+        <view class='item ' >
+             <picker class="weui-btn " mode="date" value="{{datethere}}"  bindchange="bindDateChangethere" style='margin-top:0rpx;height:84rpx;width:100%;'>
+                 <text> 工作时间</text>
+                 <view class='shuru' style="margin-left:100rpx;" >{{datethere}}</view>
+             </picker>
+             <view class='right'>
+                <image class='jiantou' src='/image/awwor.png'></image>
+             </view>
+        </view>
+         <view class='titleb '>
+            <text class='title'>提示：法律规定，灵活就业人员每日工作不得超4小时，请根据实际需要填写。</text>
+         </view>
+ 
+        <view  class='item' style="margin-top:0rpx;" >
+                 <text> 兼职描述</text>
+                  <view class='shuru' value='请输入兼职描述'style="margin-right:;" bindtap='miaoshu' data-id='{{des}}'>{{des}}</view>
+                 <view class='right'> 
+                    <image class='jiantou' src='/image/awwor.png' style='margin-left:250rpx;'></image>
+                </view>
+        </view>
+
+    
+        <view class='item' >
+          <text> 联系人</text>
+          <input class='shuru' placeholder='请输入联系人' bindinput='lianxiren'style="margin-right:200rpx;"></input>
+        </view>
+        <view class='item' >
+          <text> 联系电话</text>
+          <input class='shuru' placeholder='请输入联系电话' bindinput='phone' style="margin-right:200rpx;"></input>
+        </view>
+        <view class='item' >
+          <text> 备注</text>
+          <input class='shuru' placeholder='提前到岗' style="margin-left:30rpx;" bindinput='beizhu'></input>
+           <text class='num'>分钟</text>
+        </view>
+   
+      <button class='btnnn' bindtap='submitt'>提交审核</button>
+</view>

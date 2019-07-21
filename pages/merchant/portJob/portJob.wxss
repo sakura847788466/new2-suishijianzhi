@@ -1,0 +1,51 @@
+/* pages/merchant/portJob/portJob.wxss */
+.jianzhi{
+  height:80rpx;
+  width:750rpx;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom:1rpx solid #F2F2F2;
+}
+.jianzhi .title{
+  margin-left:40rpx;
+}
+.jianzhi .data{
+  font-size:28rpx;
+  color:#666666;
+
+
+}
+.jianzhi .time{
+  position:relative;
+  margin-right:41rpx;
+  color:#666666;
+  font-size:28rpx;
+}
+
+.jianzhi .detail{
+    position:absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:750rpx;
+    left: 40rpx;
+    top: 420rpx;
+    height: 28rpx;
+    color: rgba(153, 153, 153, 1);
+    font-family: PingFangSC-Regular;
+    font-size:20rpx;
+    margin-top:20rpx;
+}
+.jianzhi .detail .d-time{
+      width: 250rpx;
+}
+.jianzhi .detail .c-time{
+  margin-right:160rpx; 
+}
+.jianzhi .detail .z-time{
+  margin-right:82rpx; 
+}
+.last{
+  height:140rpx;
+}

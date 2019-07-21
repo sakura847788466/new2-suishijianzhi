@@ -1,0 +1,252 @@
+/* pages/merchant/tuijian/tuijian.wxss */
+.t-tu{
+  width: 100%;
+  height: 300rpx;
+}
+.top{
+  height: 420rpx;
+}
+.miaoshu{
+  width: 750rpx;
+  height: 120rpx;
+  background-color: #fff;
+
+}
+.miaoshu text{
+
+  width: 701rpx;
+  height: 80rpx;
+  line-height: 40rpx;
+  color: rgba(51, 51, 51, 1);
+  font-size: 28rpx;
+  text-align: left;
+  font-family: PingFangSC-Regular;
+
+}
+
+.tuijianma{
+
+    margin-top:20rpx;
+
+    width: 750rpx;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+
+}
+
+.tuijianma .left{
+  flex:1;
+
+}
+.tuijianma .left text{
+    line-height:80rpx;
+    margin-left:40rpx;
+
+}
+
+.tuijianma .right{
+  flex:1;
+}
+
+.tuijianma .right span{
+  margin-left:80rpx;
+  line-height:80rpx;
+  font-size:28rpx;
+  color:#999999;
+}
+
+.jiantou{
+
+    width: 40rpx;
+    height: 40rpx;
+}
+
+.dibu{
+
+    width: 750rpx;
+    height: 1204rpx;
+    background-color: rgba(255, 255, 255, 1);
+
+}
+.dibu .mine{
+
+  width: 670rpx;
+  height: 50rpx;
+  background-color: #F2F2F2;
+  color:#999999;
+
+}
+
+.dibu .mine .tone{
+  margin-left:21rpx;
+  line-height: 50rpx;
+}
+
+.dibu .mine .ttwo{
+  margin-left:50rpx;
+  line-height: 50rpx;
+}
+
+.myShouyi{
+
+  width: 670rpx;
+  height: 276rpx;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0rpx 2rpx 4rpx 0rpx rgba(0, 0, 0, 0.4);
+
+}
+.myShouyi .title{
+    /* display: block; */
+    width: 670rpx;
+    height: 80rpx;
+    background-color: rgba(229, 60, 49, 1);
+    line-height:80rpx;
+}
+.myShouyi .title span{
+    margin-left:20rpx;
+
+}
+
+.myShouyi .shouInfo{
+  height:196rpx;
+  display:flex;
+  justify-content: space-between;
+  position:relative;
+
+}
+
+.myShouyi .shouInfo .one{
+  flex:1;
+
+}
+.myShouyi .shouInfo .one .peoNum{
+  position:absolute;
+   top:20rpx;
+   left:93rpx;
+   font-size:64rpx;
+   color:#000000;
+}
+.myShouyi .shouInfo .one text{
+  position:absolute;
+   top:65rpx;
+   left:180rpx;
+   font-size:24rpx;
+   color:#000000;
+}
+.myShouyi .shouInfo .one .xiushi{
+   position:absolute;
+   top:100rpx;
+   left:108rpx;
+   font-size:20rpx;
+   color:#999999;
+   
+}
+.myShouyi .shouInfo .two{
+  flex:1;
+}
+.myShouyi .shouInfo .two .peoNum{
+   position:absolute;
+   top:20rpx;
+   left:272rpx;
+   font-size:64rpx;
+   color:#000000;
+}
+
+.myShouyi .shouInfo .two text{
+  position:absolute;
+   top:65rpx;
+   left:361rpx;
+   font-size:24rpx;
+   color:#000000;
+}
+.myShouyi .shouInfo .two .xiushi{
+   position:absolute;
+   top:100rpx;
+   left:292rpx;
+   font-size:20rpx;
+   color:#999999;
+   
+}
+.myShouyi .shouInfo .there .peoNum{
+   position:absolute;
+   top:20rpx;
+   left:522rpx;
+   font-size:64rpx;
+   color:#000000;
+}
+
+.myShouyi .shouInfo .there text{
+  position:absolute;
+   top:65rpx;
+   left:600rpx;
+   font-size:24rpx;
+   color:#000000;
+}
+.myShouyi .shouInfo .there .xiushi{
+   position:absolute;
+   top:100rpx;
+   left:533rpx;
+   font-size:20rpx;
+   color:#999999;
+   
+}
+.myShouyi .shouInfo .there{
+  flex:1;
+}
+.list{
+
+  width: 670rpx;
+  height: 50rpx;
+  line-height:50rpx;
+  font-size:32rpx;
+  color:#333333;
+}
+
+.peopleInfo{
+
+  display:flex;
+  justify-content: space-between;
+
+  width: 670rpx;
+  border-bottom:1rpx solid #F2F2F2;
+
+}
+
+.peoInfo{
+   flex:1;
+   display:flex;
+   justify-content: space-between;
+
+}
+
+.peoInfo .peoTu{
+  width: 81.6rpx;
+  height: 81.6rpx;
+ 
+}
+.peoInfo text{
+     margin-top:20rpx;
+     margin-right:30rpx;
+  }
+
+
+.right{
+  flex:2;
+  display:flex;
+  flex-direction: column;
+}
+.right .shang{
+  flex:1;
+  display:flex;
+  justify-content: space-between;
+  color:#E53C31;
+  border-bottom:1rpx solid #F2F2F2;
+  
+}
+
+.right .xia{
+  flex:1;
+   display:flex;
+  justify-content: space-between;
+  color:#999999;
+}

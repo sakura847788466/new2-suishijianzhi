@@ -1,0 +1,46 @@
+<view class='container'>
+  <view class='classify-wrap flex-text-around'>
+    <view class='classify-item' data-status='' bindtap='handleClassify'>
+      <view class='classify-text {{applyStatusEnum === "" ? "active" : ""}}'>全部</view>
+    </view>
+    <view class='classify-item' data-status='wait_confirm' bindtap='handleClassify'>
+      <view class='classify-text {{applyStatusEnum === "wait_confirm" ? "active" : ""}}'>正在抢</view>
+    </view>
+    <view class='classify-item' data-status='confirmed' bindtap='handleClassify'>
+      <view class='classify-text {{applyStatusEnum === "confirmed" ? "active" : ""}}'>已抢到</view>
+    </view>
+    <view class='classify-item' data-status='finish' bindtap='handleClassify'>
+      <view class='classify-text {{applyStatusEnum === "finish" ? "active" : ""}}'>已完成</view>
+    </view>
+  </view>
+
+  <view class='recruit-wrap'>
+    <view class='null' wx:if='{{jobList.length === 0}}'>
+      <image src='/image/img/null.png' class='null-icon'></image>
+      <text>没有相关数据~</text>
+    </view>
+    <block wx:for='{{jobList}}' wx:key='jobList'>
+      <view class='recruit-item'>
+        <view class='recruit-top flex-between flex-center'>
+          <view class='recruit-status'>待发布</view>
+          <view class='recruit-tip'>订单审核中，请耐心等候</view>
+        </view>
+        <view class='job'>
+          <view class='job-top flex-between flex-center'>
+            <view class='job-name'>广发银行充场</view>
+            <view class='job-pay'>¥ 300／h</view>
+          </view>
+          <view class='job-site flex-center'>
+            <image class='job-site-img' src='/image/job-location.png'></image>
+            <view class='job-location'>广州国际采购中心</view>
+          </view>
+          <view class='job-times flex-center'>
+            <image class='job-time-img' src='/image/job-time.png'></image>
+            <view class='job-time'>03.15～03.16</view>
+          </view>
+          <button class='job-btn'>交保证金</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

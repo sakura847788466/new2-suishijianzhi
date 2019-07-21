@@ -1,0 +1,18 @@
+<!--pages/personal/mine/mineResumeEdit/certificationDelete/certificationDelete.wxml-->
+<view class='certification-edit'>
+  <view class='name flex-center'>
+    <text class='text-namne'>资料命名</text> 
+    <input class='certification' placeholder='{{ name }}' bindblur='inputBlur' bindconfirm='inputBlur'></input>
+  </view>
+  <view class='upload flex-center'>资料上传
+    <text class='note' decode='true'>(&nbsp;&nbsp;<text class='offset'>仅支持.jpg格式，小于2M</text>&nbsp;&nbsp;)</text>
+  </view>
+  <view class='upload-file flex-center'>
+    <image src='{{ url }}'></image>
+    <image src='/image/add.png' bindtap='changeImage'></image>
+  </view>
+</view>
+<view class='confirm flex-center'>
+  <view class='cancel' bindtap='deleteAnnex'>删除</view>
+  <view class='save' bindtap='save'>保存</view>
+</view>

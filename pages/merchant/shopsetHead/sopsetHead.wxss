@@ -1,0 +1,2 @@
+/* pages/merchant/shopsetHead/sopsetHead.wxss */
+ @import "../../../pages/merchant/shopIntro/shopIntro.wxss" 

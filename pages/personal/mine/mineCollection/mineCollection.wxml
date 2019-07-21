@@ -1,0 +1,26 @@
+<!--pages/personal/mine/mineCollection/mineCollection.wxml-->
+<view class='collect-wrapper'>
+  <block wx:for="{{ collection }}">
+    <view class='collect-item flex-center'>
+      <view class='col1'>
+        <view class='row1'>{{ item.name }}</view>
+        <view class='row2 flex-center'>
+          <image src='/image/collect-location.png'></image>
+          <text>{{ item.location }}</text>
+        </view>
+        <view class='row3'>
+          <image class='clock' src='/image/collect-clock.png'></image>
+          <text class='time'>03.15～03.16</text>
+        </view>
+      </view>
+      <view class='col2 flex-center'>
+        <text wx:if="{{ item.isValid }}" class='nearby'>常住附近</text>
+        <image wx:else class='invalid' src='/image/invalid.png'></image>
+      </view>
+      <view class='col3 flex-center flex-column'>
+        <view class='wage'>¥ {{ item.wage }} /h</view>
+        <view class='distance'>{{ item.distance }}</view>
+      </view>
+    </view>
+  </block>
+</view>

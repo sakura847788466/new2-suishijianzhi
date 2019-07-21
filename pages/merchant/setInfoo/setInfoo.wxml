@@ -1,0 +1,17 @@
+<!--pages/merchant/setInfoo/setInfoo.wxml-->
+<view class='container'>
+  <view class='bg-common'>
+     <view class="weui-media-box__desc">联系电话与随时兼·职登录账号为一对一绑定关系，若更换则下次将使用新手机登录；更换时需要验证当前联系电话。</view>
+     <view class='phoneNum'>
+        <text>新联系方式</text>
+        <input class='num' value='18826101234'></input>
+     </view>
+     <view class='yanzhengma'>
+        <text>验证码</text>
+        <input class='y_num' value='请输入验证码'></input>
+        <span class='bt'>获取验证码</span>
+     </view>
+     <button class='btnn tijiao'>保存</button>
+  </view>
+
+</view>

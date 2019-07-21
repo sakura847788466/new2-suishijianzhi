@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "全部职位",
+  "usingComponents": {
+    "header-search": "/components/header-search/header-search"
+  }
+}

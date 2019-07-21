@@ -1,0 +1,25 @@
+<!--pages/personal/mine/mineResumeEdit/addResume/addResume.wxml-->
+<!--pages/personal/mine/mineResumeEdit/changeLocation/changeLocation.wxml-->
+<view class='wrapper'>
+  <view class='region-wrapper flex-center'>
+    <text class='region-text'>工作职位</text>
+    <view class='region flex-center'>
+      <text class='input-holder' bindtap='selectJob'>{{ jobName }}</text>
+      <!-- <input class='select' placeholder='请填写职位' placeholder-class="input-holder" bindblur='jobSet' bindconfirm='jobSet'></input> -->
+    </view>
+  </view>
+  <view class='gapper'></view>
+  <view class='region-wrapper work-long flex-center'>
+    <text class='region-text'>工作时长</text>
+    <input placeholder-class="input-holder" bindblur='yearSet' bindconfirm='yearSet' type='number'></input>
+    <text>年</text>
+    <input placeholder-class="input-holder" bindblur='monthSet' bindconfirm='monthSet' type='number'></input>
+    <text>月</text>
+    <text class="input-holder notation">请点击虚线方框输入</text>
+    <!-- <picker mode="date" fields="month" value="workLong" start="">
+      <text decode="ture" class='flex-item input-holder'>&nbsp;{{ workLong }}</text>
+    </picker> -->
+  </view>
+</view>
+
+<view class='save' bindtap='save'>添加</view>

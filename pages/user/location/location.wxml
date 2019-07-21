@@ -1,0 +1,16 @@
+<view class='container'>
+  <view class='location-wrap' wx:if='{{nowCity}}'>
+    <view class='location-title'>当前城市</view>
+    <view class='city-wrap flex'>
+      <view class='city'>{{nowCity}}</view>
+    </view>
+  </view>
+  <view class='location-wrap'>
+    <view class='location-title'>热门城市</view>
+    <view class='city-wrap flex'>
+      <block wx:for="{{cityList}}" wx:key="cityList">
+        <view class='city' data-citycode='{{item.cityCode}}' data-cityname='{{item.name}}' data-islocalsystem='{{item.isLocalSystem}}' data-status='{{item.status}}' data-appid='{{app.appId}}' bindtap='chooseCity'>{{item.name}}</view>
+      </block>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<!--pages/personal/mine/mineResumeEdit/addResume/selectJob/selectJob.wxml-->
+<view class='wrapper flex-center flex-column'>
+  <view class='job-type' 
+        bindtap='select'
+        wx:for="{{ jobList }}"
+        wx:key="*this"
+        data-id='{{ item.id }}'
+        data-name='{{ item.name }}'>{{ item.name }}
+  </view>
+</view>

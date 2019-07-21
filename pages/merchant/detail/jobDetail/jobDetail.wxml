@@ -1,0 +1,94 @@
+<view class='container'>
+  <view class='job detail-wrap'>
+    <view class='job-top flex-between flex-center'>
+      <view class='job-name'>{{detail.title}}</view>
+      <view class='job-top-tig'>招{{detail.planWorkerNum}}人</view>
+      <view class='job-pay flex-item'>¥ {{detail.hourlyPay}}／h</view>
+    </view>
+    <view class='job-site flex-center'>
+      <image class='job-site-img' src='/image/job-location.png'></image>
+      <view class='job-location'>{{detail.address}}</view>
+      <!-- <view class='job-tag'>常住附近</view> -->
+      <!-- <view class='job-distance flex-item'>8.5km</view> -->
+    </view>
+    <view class='job-times flex-center'>
+      <image class='job-time-img' src='/image/job-time.png'></image>
+      <view class='job-time'>{{detail.workStartTime}}～{{detail.workEndTime}}</view>
+    </view>
+  </view>
+  <view class='detail-wrap'>
+    <view class='detail-title'>职位描述</view>
+    <view class='detail-content' style='max-height:{{ isUnfold ? "" : "500rpx"}};'>
+      <!-- <view class='detail-con-title'>岗位职责：</view> -->
+      <view class='detail-con-text'>
+        {{detail.des}}
+      </view>
+      <!-- <view class='detail-con-title'>岗位职责：</view>
+      <view class='detail-con-text'>
+        1、负责公司项目的PC/WAP页面的设计、活动设计；
+        2、具备对文案需求的理解能力，以用户为核心的设计理念，将网站页面进行优化、改版；
+        3、能准确掌握多种风格塑造，能够充分理解产品的需求，较强的创新、审美能力，充分体现页面的定位与特点；
+        4、完成上级临时交办的其他任务。
+      </view> -->
+      <view class='detail-tips'>tips：凡收取费用或工作内容不符的兼职，请您提高警惕并第一时间向我们举报。</view>
+    </view>
+    <view class='unfold flex-text-center flex-center' bindtap='handleFold' wx:if='{{ifFold}}'>
+        <text hidden='{{isUnfold}}'>展开</text><text hidden='{{!isUnfold}}'>收起</text>
+        <image src='/image/down2.png' hidden='{{isUnfold}}'></image><image src='/image/up2.png' hidden='{{!isUnfold}}'></image>
+      </view>
+  </view>
+  <view class='detail-wrap'>
+    <view class='detail-title'>工作时间</view>
+    <view class='time flex-center'>
+      <image src='/image/job-time.png' class='time-icon'></image>
+      <text>{{detail.workStartDate}}~{{detail.workEndDate}} {{detail.workStartTime}}-{{detail.workEndTime}}</text>
+    </view>
+    <view class='wran flex-center'>
+      <image src='/image/wran.png' class='wran-icon'></image>
+      <text>需提前{{detail.readyTime}}分钟到场</text>
+    </view>
+  </view>
+  <view class='detail-wrap detail-nopadding'>
+    <view class='detail-title flex-between flex-center'>
+      <text>工作地点</text>
+      <text class='detial-t2' wx-if='{{detail.distance}}'>距离当前位置{{detail.distance}}m</text>
+    </view>
+    <my-map longitude='{{detail.longitude}}' latitude='{{detail.latitude}}' province='{{detail.province}}' city='{{detail.city}}' area='{{detail.area}}' address='{{detail.address}}'></my-map>
+  </view>
+  <view class='detail-wrap'>
+    <view class='detail-title'>
+      <text>商家信息</text>
+    </view>
+    <view class='mer-info flex-center'>
+      <image src='/image/company.png'></image>
+      <view class='mer-info-content flex-item'>
+        <view class='name'>{{detail.companyName}}</view>
+        <view class='contact'>联系人：{{detail.contactName}}</view>
+      </view>
+      <button data-id='{{detail.employerId}}' bindtap='toMerDetail'>查看详情</button>
+    </view>
+  </view>
+  <view class='no-more flex-text-center'>
+    没有更多信息~
+  </view>
+</view>
+<view class='button-wrap flex'>
+  <block wx:if='{{role === "1"}}'>
+    <button class='btn-gray flex-item' wx:if='{{detail.jobStatus === "wait_audit"}}'>审核中…</button>
+    <button class='btn-gray flex-item' wx:if='{{detail.jobStatus === "audit_failed"}}'>审核失败</button>
+    <button class='btn-gray flex-item' wx:if='{{detail.employerId !== currentUserId && (detail.jobStatus === "unpay" || detail.jobStatus === "onShelf")}}'>已报名{{detail.jobApplyList.length}}人</button>
+    <button class='btn-blue flex-item' wx:if='{{detail.employerId === currentUserId && (detail.jobStatus === "unpay" || detail.jobStatus === "onShelf")}}' bindtap='toStaffList'>挑选员工</button>
+  </block>
+  <block wx:else>
+    <view class='btn-share flex-text-center flex-center flex-column'>
+      <image src='/image/share.png' class='share-img'></image>
+      <text>分享</text>
+    </view>
+    <view class='btn-collect flex-text-center flex-center flex-column'>
+      <image src='/image/collect.png' class='collect-img'></image>
+      <text>收藏</text>
+    </view>
+    <button class='btn-grab' bindtap='grab'>我要抢单</button>
+  </block>
+  
+</view>

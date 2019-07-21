@@ -1,0 +1,7 @@
+<view class='container'>
+  <view class='textarea-box'>
+    <textarea value='{{description}}' maxlength='{{maxLen}}' placeholder='请输入商家概况' placeholder-class='textarea-placeholder' bindinput='setDescription'></textarea>
+    <view class='num'>{{curLen}}/{{maxLen}}</view>
+  </view>
+  <button class='btn-save' bindtap='save'>保存</button>
+</view>

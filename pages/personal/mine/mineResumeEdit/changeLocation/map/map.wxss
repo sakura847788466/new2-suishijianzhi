@@ -1,0 +1,26 @@
+/* pages/personal/mine/mineResumeEdit/changeLocation/map/map.wxss */
+page{
+  background-color: white;
+}
+.search{
+  margin: 20rpx 40rpx;
+  padding: 20rpx 40rpx;
+  border-radius: 50rpx;
+  background-color: #f2f2f2;
+  font-size: 24rpx;
+}
+.gapper{
+  border-left: 1px solid #d8d8d8;
+  height: 40rpx;
+  margin: 0 20rpx;
+}
+.searching{
+  color: #d8d8d8;
+}
+.map-wrapper{
+  height: 600rpx;
+}
+map{
+  width: 100%;
+  height: 100%;
+}

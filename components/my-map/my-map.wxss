@@ -1,0 +1,39 @@
+@import '/app.wxss';
+.mer-location-box{
+  position:relative;
+  width:100%;
+  height:240rpx;
+}
+.mer-location-bg{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:1;
+}
+.mer-location-text-wrap{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:transparent;
+  z-index:2; 
+}
+.mer-location-text{
+  width:566rpx;
+  padding:15rpx;
+  background:#fff;
+  box-sizing:border-box;
+  border-radius:6rpx;
+  box-shadow:1rpx 1rpx 15rpx #ccc;
+}
+.mer-location-text>text{
+  font-size:30rpx;
+  line-height:1.3;
+  color:#333;
+}
+.mer-location-icon{
+  width:40rpx;
+  height:40rpx;
+  margin-right:15rpx;
+}

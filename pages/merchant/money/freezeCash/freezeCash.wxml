@@ -1,0 +1,89 @@
+<view class='container'>
+  <view class='top'>
+    <view class='top-title'>冻结金额</view>
+    <view class='top-money'>{{frozenAmount}}<text class='top-rmb'>元</text></view>
+  </view>
+  <view class='money-detail'>
+    <view class='jiaoyi'>
+        <text>交易明细</text>
+    </view>
+    <view class='money-list flex-center'>
+      <view class='left flex-item'>
+        <view class='list-name'>充值</view>
+        <view class='list-time'>
+          <text class='data'>2018-12-16</text>
+          <text class='time'>09:30:56</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>+2.00</text>
+      </view>
+    </view>
+    <view class='money-list flex-center'>
+      <view class='left flex-item'>
+        <view class='list-name'>充值</view>
+        <view class='list-time'>
+          <text class='data'>2018-12-16</text>
+          <text class='time'>09:30:56</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>+2.00</text>
+      </view>
+    </view>
+    <view class='money-list flex-center'>
+      <view class='left flex-item'>
+        <view class='list-name'>充值</view>
+        <view class='list-time'>
+          <text class='data'>2018-12-16</text>
+          <text class='time'>09:30:56</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>+2.00</text>
+      </view>
+    </view>
+    <view class='money-list flex-center'>
+      <view class='left flex-item'>
+        <view class='list-name'>充值</view>
+        <view class='list-time'>
+          <text class='data'>2018-12-16</text>
+          <text class='time'>09:30:56</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>+2.00</text>
+      </view>
+    </view>
+    <view class='money-list flex-center'>
+      <view class='left flex-item'>
+        <view class='list-name'>充值</view>
+        <view class='list-time'>
+          <text class='data'>2018-12-16</text>
+          <text class='time'>09:30:56</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>+2.00</text>
+      </view>
+    </view>
+    <view class='money-list flex-center'>
+      <view class='left flex-item'>
+        <view class='list-name'>充值</view>
+        <view class='list-time'>
+          <text class='data'>2018-12-16</text>
+          <text class='time'>09:30:56</text>
+        </view>
+      </view>
+      <view class='right'>
+        <text>+2.00</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+
+
+
+
+

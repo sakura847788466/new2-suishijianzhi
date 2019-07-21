@@ -1,0 +1,8 @@
+<view class='notice-wrap'>
+    <view class='notice flex-center'>
+      <image src='/image/notice.png' />
+      <view class='notice-content'>
+        <view class='notice-content-text' animation='{{animation}}'>{{noticeText}}</view>
+      </view>
+    </view>
+  </view>

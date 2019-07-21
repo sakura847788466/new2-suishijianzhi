@@ -1,0 +1,18 @@
+<!--pages/merchant/setWhere/setWhere.wxml-->
+  <view class='con'>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>商</text><text>户</text><text>地</text><text>址</text></view>
+        <view class='con-placeholder flex-center flex-item' style='{{ province ? "padding-left:15rpx;color:#999" : ""}}' bindtap='chooseLoaction'>
+          <block wx:if='{{province}}'>{{province}}{{city}}{{area}}</block>
+          <block wx:else>
+            <image src='/image/location.png' class='position-img'></image> <text class='flex-item'>点击选择</text>  <image class='to-img' src='/image/mine-job-detail.png'></image> 
+          </block>
+          
+        </view>
+      </view>
+      <view class='con-item flex-center'>
+        <view class='con-text flex-between'><text>详</text><text>细</text><text>地</text><text>址</text></view>
+        <input value='{{address}}' placeholder='详细地址，例如00号楼00层00室' placeholder-class='con-placeholder' class='con-input flex-item'></input>
+      </view>
+    </view>
+    <button class='btnn' bindtap='clickSave'>保存</button>

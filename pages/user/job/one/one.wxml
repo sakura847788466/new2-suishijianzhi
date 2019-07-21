@@ -1,0 +1,44 @@
+<view class='container'>
+  <image src='/image/2.png' class='detail-banner'></image>
+  <view class='null' wx:if='{{jobList.length === 0}}'>
+    <image src='/image/img/null.png' class='null-icon'></image>
+    <text>没有相关数据~</text>
+  </view>
+  <view class='job-wrap' wx:else>
+    <block wx:for='{{jobList}}' wx:key='jobList'>
+      <view class='job' data-id='{{item.id}}' bindtap='toJobDetail'>
+        <view class='job-top flex-between flex-center'>
+          <view class='job-name'>{{item.title}}</view>
+          <view class='job-pay'>¥ {{item.hourlyPay}}／h</view>
+        </view>
+        <view class='job-site flex-center'>
+          <image class='job-site-img' src='/image/job-location.png'></image>
+          <view class='job-location flex-item line1'>{{item.address}}</view>
+          <view class='job-distance'>{{item.distance}}km</view>
+        </view>
+        <view class='job-times flex-center'>
+          <image class='job-time-img' src='/image/job-time.png'></image>
+          <view class='job-time'>{{item.workStartTime}}～{{item.workEndTime}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <!-- <view class='job-wrap'>
+      <view class='job'>
+        <view class='job-top flex-between flex-center'>
+          <view class='job-name'>广发银行充场</view>
+          <view class='job-pay'>¥ 300／h</view>
+        </view>
+        <view class='job-site flex-center'>
+          <image class='job-site-img' src='/image/job-location.png'></image>
+          <view class='job-location'>广州国际采购中心</view>
+          <view class='job-tag'>常住附近</view>
+          <view class='job-distance flex-item'>8.5km</view>
+        </view>
+        <view class='job-times flex-center'>
+          <image class='job-time-img' src='/image/job-time.png'></image>
+          <view class='job-time'>03.15～03.16</view>
+        </view>
+      </view>
+    </view> -->
+</view>

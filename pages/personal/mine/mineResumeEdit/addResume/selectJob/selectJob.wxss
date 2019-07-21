@@ -1,0 +1,10 @@
+/* pages/personal/mine/mineResumeEdit/addResume/selectJob/selectJob.wxss */
+.wrapper{
+  background-color: white;
+}
+.job-type{
+  width: 100%;
+  padding: 20rpx 20rpx;
+  text-indent: 40rpx;
+  border-bottom: 1px solid #d8d8d8
+}

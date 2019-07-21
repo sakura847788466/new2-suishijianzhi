@@ -1,0 +1,22 @@
+<view class="container">
+  <!-- <view class='page1'>
+    <view class='personal'>
+      <image class='user_icon' src='/image/personal.png' />
+      <text>个人注册</text>
+    </view>
+    <view class='company'>
+      <image class='user_icon' src='/image/company.png' />
+      <text>公司注册</text>
+    </view>
+  </view> -->
+  <view class='page2'>
+    <view class='work'>
+      <image src='/image/work.png' />
+      <text bindtap='searchJob'>我要找工作</text>
+    </view>
+    <view class='recruit'>
+      <image src='/image/recruit.png' />
+      <text bindtap='toRecruit'>我要招人</text>
+    </view>
+  </view>
+</view>

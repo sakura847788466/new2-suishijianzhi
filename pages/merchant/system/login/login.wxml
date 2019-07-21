@@ -1,0 +1,24 @@
+
+<view class="container">
+  <view class='logo'>
+    <image src='/image/logo.png' />
+  </view>
+  <view class='phone_box'>
+   <view class='phone-item flex-center'>
+    <image src='/image/phone2.png' class='phone-img'></image>
+    <input type='number' maxlength='11' class='flex-item' placeholder-class='placeholder-style' placeholder='请输入手机号' bindinput='setPhone'/>
+   </view>
+   <view class='phone-item flex-center'>
+   <image src='/image/lock.png' class='lock-img'></image>
+    <input type='password' value='{{password}}' class='flex-item' placeholder-class='placeholder-style' placeholder='请输入密码' bindinput='setPassword' wx:if='{{eyeOpen}}'/>
+    <input type='text' value='{{password}}' class='flex-item' placeholder-class='placeholder-style' placeholder='请输入密码' bindinput='setPassword' wx:else />
+    <image src='/image/eye.png' class='eye' wx:if='{{eyeOpen}}' catchtap='handleEyeOpen'></image><image src='/image/eye-close.png' class='eye'  catchtap='handleEyeOpen' wx:else></image>
+   </view>
+   <view class='btn' catchtap='toLogin'>登录</view>
+   <view class='tip_bottom flex-between'>
+    <navigator url='/pages/merchant/system/password/password?type=1' hover-class='none'>忘记密码？</navigator>
+    <text bindtap='toRegister'>注册</text>
+    <!-- <navigator url='/pages/merchant/system/register/register' hover-class='none'>注册</navigator> -->
+   </view>
+  </view>
+</view>

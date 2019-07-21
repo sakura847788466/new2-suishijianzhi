@@ -1,0 +1,71 @@
+.job{
+  position:relative;
+  padding:20rpx 30rpx;
+  border-bottom:1px solid #f2f2f2;
+  background:#fff;
+}
+.job-name{
+  font-size:30rpx;
+}
+.job-top{
+  padding-bottom:15rpx;
+  padding-left:6rpx;
+}
+.job-top-tig{
+  font-size:19rpx;
+  line-height:1.3;
+  color:#FF2B2B;
+  border:1px solid #FF2B2B;
+  padding:0 5rpx;
+  border-radius:8rpx;
+  margin:0 12rpx;
+}.job-pay{
+  font-size:30rpx;
+  color:#FF2B2B;
+  font-weight:bold;
+  text-align:right;}
+.job-site{
+  padding-bottom:15rpx;
+}
+.job-location,.job-distance,.job-time{
+  font-size:28rpx;
+  color:#666;
+}
+.job-distance{
+  text-align:right;
+}
+.job-tag{
+  width:96rpx;
+  height:28rpx;
+  font-size:20rpx;
+  line-height:28rpx;
+  color:#0C71EF;
+  text-align:center;
+  border:1px solid #0C71EF;
+  border-radius:8rpx;
+  margin:0 15rpx;
+}
+.job-site-img{
+  width:32rpx;
+  height:32rpx;
+  margin-right:10rpx;
+}
+.job-time-img{
+  width:28rpx;
+  height:28rpx;
+  margin-right:10rpx;
+  margin-left:2rpx;
+}
+
+.job-btn{
+  position:absolute;
+  right:20rpx;
+  bottom:40rpx;
+  width:160rpx;
+  height:60rpx;
+  font-size:30rpx;
+  line-height:60rpx;
+  color:#fff;
+  background:#0C71EF;
+  border-radius:30rpx;
+}

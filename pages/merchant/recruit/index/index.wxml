@@ -1,0 +1,49 @@
+<view class='container'>
+  <view class='classify-wrap flex-text-around'>
+    <view class='classify-item' data-status='' bindtap='handleClassify'>
+      <view class='classify-text {{jobStatus === "" ? "active" : ""}}'>全部</view>
+    </view>
+    <view class='classify-item' data-status='wait_audit' bindtap='handleClassify'>
+      <view class='classify-text {{jobStatus === "wait_audit" ? "active" : ""}}'>待发布</view>
+    </view>
+    <view class='classify-item' data-status='unpay,onShelf' bindtap='handleClassify'>
+      <view class='classify-text {{jobStatus === "unpay,onShelf" ? "active" : ""}}'>已发布</view>
+    </view>
+    <view class='classify-item' data-status='finish' bindtap='handleClassify'>
+      <view class='classify-text {{jobStatus === "finish" ? "active" : ""}}'>已完成</view>
+    </view>
+  </view>
+
+  <view class='recruit-wrap'>
+    <view class='null' wx:if='{{jobList.length === 0}}'>
+      <image src='/image/img/null.png' class='null-icon'></image>
+      <text>没有相关数据~</text>
+    </view>
+    <block wx:for='{{jobList}}' wx:key='jobList'>
+      <view class='recruit-item' data-id='{{item.id}}' bindtap='toJobDetail'>
+        <view class='recruit-top flex-between flex-center'>
+          <view class='recruit-status'>{{item.jobStatus}}</view>
+          <view class='recruit-tip'>{{ item.jobStatus === "待发布" ? "职位审核中，请耐心等候" : ""}}</view>
+        </view>
+        <view class='job'>
+          <view class='job-top flex-between flex-center'>
+            <view class='job-name'>{{item.title}}</view>
+            <view class='job-pay'>¥ {{item.hourlyPay}}／h</view>
+          </view>
+          <view class='job-site flex-center'>
+            <image class='job-site-img' src='/image/job-location.png'></image>
+            <view class='job-location'>{{item.address}}</view>
+          </view>
+          <view class='job-times flex-center'>
+            <image class='job-time-img' src='/image/job-time.png'></image>
+            <view class='job-time'>{{item.workStartTime}}～{{item.workEndTime}}</view>
+          </view>
+          <button class='job-btn' wx:if='{{item.jobStatus === "已发布" && item.jobApplyList}}'  data-id='{{item.id}}' bindtap='toCheckStaff'>挑选员工</button>
+          <button class='job-btn' wx:if='{{item.jobStatus === "已发布" && item.isFill}}'>查看员工</button>
+          <button class='job-btn' wx:if='{{item.jobStatus === "已完成"}}'>评价员工</button>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<my-bar current-id='1'></my-bar>

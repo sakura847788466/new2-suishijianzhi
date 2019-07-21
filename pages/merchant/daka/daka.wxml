@@ -1,0 +1,33 @@
+<!--pages/merchant/daka/daka.wxml-->
+<view class='container bg'>
+    <view class='top'>
+        <image class='tu' src='/image/clock.png'></image>
+        <text class='time'>11:30:32</text>
+        <button class='lianxi'>联系商家</button>
+    </view>
+   <text class='time'>2019年2月21日星期四</text>
+    <view class='neirong'>
+          <text class='shijian'>工作时间11:30-18:30，共7小时</text>
+           <view class='huiYuan'></view>
+           <image class='dengpao' src='/image/dengpao.png'></image>
+            <text class='dakashijian'>打卡时间11：30</text>
+            <text class='queren'>商家确认11：30</text>
+            <image class='yueliang' src='/image/moom.png'></image>
+            <view class='lightYuan'></view>
+            <text class='xiaban'>下班时间18:30</text>
+            <image class='daka' src='/image/dakaa.png'></image>
+            <view class='shuxian'></view>
+
+
+
+
+
+         <text class='tishi'>
+            提示：上/下班打卡时间，以商家确认时间为准，请主动提醒商家确认。商家确认完工后您的薪资将<span style="color:red;">于24小时内</span>到账，请耐心等候。
+         </text>
+         <view class='jianzhimingxi'>
+            <text>兼职明细</text>
+            <image src="/image/awwor.png" class='tupian'></image>
+         </view>
+    </view>
+</view>

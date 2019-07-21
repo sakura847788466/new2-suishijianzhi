@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "最新员工",
+  "usingComponents": {
+    "stars": "/components/stars/stars"
+  }
+}

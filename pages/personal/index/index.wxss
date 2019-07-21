@@ -1,0 +1,11 @@
+@import '/common/style/header-search.wxss';
+@import '/common/style/index.wxss';
+@import '/common/style/job-item.wxss';
+.msg-img{
+  position:fixed;
+  bottom:20rpx;
+  right:20rpx;
+  width:90rpx;
+  height:90rpx;
+  z-index:1000;
+}

@@ -1,0 +1,18 @@
+<!--pages/personal/mine/mineResumeEdit/changeLocation/changeLocation.wxml-->
+<view class='wrapper'>
+  <view class='region-wrapper flex-center'>
+    <text class='region-text'>所在区域</text>
+    <view class='region flex-center' bind:tap="changeLocation">
+      <image class='region-icon' src='/image/location.png'></image>
+      <text class='select'>{{ location }}</text>
+      <image class='arrow-icon' src='/image/arrow.png'></image>
+    </view>
+  </view>
+  <view class='gapper'></view>
+  <view class='region-wrapper flex-center'>
+    <text class='region-text'>详细地址</text>
+    <input placeholder='例如00号楼00层00室' placeholder-class="input-holder" bindconfirm='addressDetail' type='text' confirm-type="done"></input>
+  </view>
+</view>
+<view class='notation'>系统将根据您的地址就近推荐工作岗位</view>
+<view class='save' bindtap='save'>保存</view>
